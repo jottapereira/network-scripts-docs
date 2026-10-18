@@ -1,0 +1,16 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+
+# Site Network Scripts. Cada espaço aponta para uma pasta deste repositório.
+# A `key` identifica o espaço para o Git Sync: NUNCA altere depois de publicado (cria um espaço novo).
+# Para renomear, mude `title`; para mudar a URL, mude `path`.
+site:
+  title: Network Scripts
+  structure:
+    - type: space
+      key: network-scripts-pt-br
+      title: Português
+      path: pt
+      default: true
+      content:
+        directory: ./pt-br
+        language: pt-br
