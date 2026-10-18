@@ -6,7 +6,9 @@ description: Histórico de versões do one_characters.
 
 ## 1.1.0
 
-* Multi-framework: ESX Legacy, QBCore, Qbox e Standalone, além do vRP Creative.
+* Multi-framework: ESX Legacy, QBCore, Qbox, Standalone, Creative v4/v5 e vRPex, além do vRP Creative.
+* Todas as gerações do Creative com Passport (Network, Origens, Bewitched), identificadas automaticamente.
+* vRPex: modo de personagem único, com criador para conta nova e escolha de spawn para as demais.
 * Aparência salva em illenium-appearance, fivem-appearance ou skinchanger.
 * Itens iniciais do framework (QBCore e Qbox) e eventos de spawn esperados por cada framework.
 * Sliders de rosto: "direita = mais" em todos, com as pontas escritas (Fino ↔ Largo).

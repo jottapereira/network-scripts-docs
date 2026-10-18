@@ -62,4 +62,4 @@
 
 ## Links
 
-* [Discord: compra e suporte](https://discord.gg/sj3T9naGG2)
+* [Discord: compra e suporte](https://discord.gg/ntqpUuHmYV)

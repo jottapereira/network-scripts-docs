@@ -10,7 +10,7 @@ Todas as compras são feitas pelo nosso **Discord**. Lá você encontra os produ
 pode tirar dúvidas antes de comprar.
 
 {% hint style="success" %}
-[Entrar no Discord da Network Scripts](https://discord.gg/sj3T9naGG2)
+[Entrar no Discord da Network Scripts](https://discord.gg/ntqpUuHmYV)
 {% endhint %}
 
 ## Como recebo

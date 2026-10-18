@@ -13,7 +13,7 @@ esse momento numa experiência de jogo: seus personagens aparecem **no mundo**, 
 e a entrada na cidade usa a mesma transição do GTA.
 
 {% hint style="success" %}
-**Disponível** para vRP Creative, ESX, QBCore, Qbox e Standalone. [Comprar no Discord](https://discord.gg/sj3T9naGG2)
+**Disponível** para vRP Creative (todas as gerações), vRPex, ESX, QBCore, Qbox e Standalone. [Comprar no Discord](https://discord.gg/ntqpUuHmYV)
 {% endhint %}
 
 ## Destaques
@@ -53,7 +53,9 @@ Câmera com rosto, tronco e corpo, giro por arrastar, zoom e **sortear aparênci
 
 | Framework | Substitui |
 |---|---|
-| vRP Creative | `spawn` |
+| vRP Creative (Network, Origens, Bewitched) | `spawn` |
+| vRP Creative v4/v5 | `vrp_spawn` e `vrp_login` |
+| vRPex | criação de identidade e escolha de spawn |
 | ESX Legacy | `esx_multicharacter` |
 | QBCore | `qb-multicharacter` e `qb-spawn` |
 | Qbox | menu de personagens do `qbx_core` |

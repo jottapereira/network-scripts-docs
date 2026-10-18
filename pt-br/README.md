@@ -25,7 +25,7 @@ desempenho de **0.00 ms** quando ociosos. Instalam em minutos na sua base, seja 
 QBCore, Qbox** ou **Standalone**.
 
 {% hint style="success" %}
-**Compra e suporte acontecem no nosso Discord.** [Entrar no Discord](https://discord.gg/sj3T9naGG2)
+**Compra e suporte acontecem no nosso Discord.** [Entrar no Discord](https://discord.gg/ntqpUuHmYV)
 {% endhint %}
 
 ## Produtos

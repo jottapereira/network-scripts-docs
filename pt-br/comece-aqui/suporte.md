@@ -7,7 +7,7 @@ description: Como pedir ajuda e receber resposta rápida.
 O suporte é feito por ticket no nosso Discord.
 
 {% hint style="success" %}
-[Abrir um ticket no Discord](https://discord.gg/sj3T9naGG2)
+[Abrir um ticket no Discord](https://discord.gg/ntqpUuHmYV)
 {% endhint %}
 
 ## Antes de abrir o ticket

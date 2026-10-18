@@ -19,4 +19,4 @@ Inventário completo no padrão dos nossos sistemas:
 ## Roadmap
 
 Os próximos sistemas são decididos junto com a comunidade. Sugestões e votações acontecem no
-[Discord](https://discord.gg/sj3T9naGG2).
+[Discord](https://discord.gg/ntqpUuHmYV).

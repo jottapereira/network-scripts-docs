@@ -13,7 +13,7 @@ Use `setr` para o que o cliente também precisa ler e `set` para o que deve fica
 
 | Convar | Tipo | Padrão | Descrição |
 |---|---|---|---|
-| `one:framework` | `setr` | `auto` | força o framework: `creative`, `vrpex`, `esx`, `qb`, `qbox`, `standalone` |
+| `one:framework` | `setr` | `auto` | força o framework: `creative`, `creativev5`, `vrpex`, `esx`, `qb`, `qbox`, `standalone` |
 | `one:appearance` | `setr` | `auto` | força o sistema de roupa: `creative`, `illenium`, `skinchanger`, `one` |
 | `one:locale` | `setr` | `pt-BR` | idioma padrão de todos os produtos |
 | `one:notify` | `setr` | `auto` | notificações: `one`, `ox`, `framework`, `native` |
@@ -43,6 +43,8 @@ Os envios respeitam o limite do Discord (uma mensagem por segundo, em fila).
 | `one:creative:cash_item` | `dollar` | item usado como dinheiro em espécie |
 | `one:creative:dirty_item` | `dirtydollar` | item usado como dinheiro sujo |
 | `one:creative:premium_slots` | `2` | slots extras de personagem para contas Premium |
+| `one:creativev5:cash_item` | `dollars` | Creative v4/v5: item usado como dinheiro em espécie |
+| `one:creativev5:dirty_item` | `dollars2` | Creative v4/v5: item usado como dinheiro sujo |
 | `one:esx:prefix` | `char` | prefixo dos personagens (`char1:...`) |
 | `one:esx:height` | `180` | altura gravada em personagens novos |
 | `one:vrpex:dirty_item` | `dinheirosujo` | item usado como dinheiro sujo |

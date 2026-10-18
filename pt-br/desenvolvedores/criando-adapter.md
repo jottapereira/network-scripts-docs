@@ -8,7 +8,7 @@ Se sua base é uma variação de um framework suportado (funções renomeadas, t
 é um **adapter**: um arquivo que ensina o `one_lib` a falar com ela.
 
 {% hint style="info" %}
-Tem uma base diferente? Fale com a gente no [Discord](https://discord.gg/sj3T9naGG2). Adapters de bases
+Tem uma base diferente? Fale com a gente no [Discord](https://discord.gg/ntqpUuHmYV). Adapters de bases
 populares entram no `one_lib` oficial para todos os clientes.
 {% endhint %}
 

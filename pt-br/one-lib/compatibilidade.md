@@ -13,8 +13,9 @@ Na inicialização, nesta ordem:
 | `qbx_core` | Qbox |
 | `qb-core` | QBCore |
 | `es_extended` | ESX |
-| `vrp` com função `Passport` | vRP Creative |
-| `vrp` sem ela | vRPex |
+| `vrp` com função `Passport` | vRP Creative (a geração é lida do código do `vrp`) |
+| `vrp` com `baseModule:idLoaded` | vRP Creative v4/v5 |
+| `vrp` sem nenhum dos dois | vRPex / vRP 1 |
 | nenhum | Standalone |
 
 ## Entrada e saída de personagem
@@ -24,8 +25,9 @@ O `one_lib` escuta os eventos de cada framework e dispara sempre os mesmos event
 
 | Framework | Personagem entrou | Personagem saiu |
 |---|---|---|
-| vRP Creative | `ChosenCharacter` | `Disconnect` |
-| vRPex | `vRP:playerSpawn` (primeiro spawn) | `vRP:playerLeave` |
+| vRP Creative | `ChosenCharacter` ou `CharacterChosen` | `Disconnect` |
+| vRP Creative v4/v5 | `vRP:playerSpawn` (disparado por `baseModule:idLoaded`) | `vRP:playerLeave` |
+| vRPex | `vRP:playerSpawn` | `vRP:playerLeave` |
 | ESX | `esx:playerLoaded` | `esx:playerLogout` · `esx:playerDropped` |
 | QBCore / Qbox | `QBCore:Server:PlayerLoaded` | `QBCore:Server:OnPlayerUnload` |
 | Standalone | login do personagem (ou entrada no servidor, sem `one_characters`) | saída do servidor |
@@ -34,17 +36,18 @@ Reiniciar o `one_lib` com o servidor cheio não perde ninguém: ele reconstrói 
 
 ## Dinheiro
 
-| Conta | Creative | vRPex | ESX | QBCore / Qbox |
-|---|---|---|---|---|
-| `cash` | item `dollar` | `getMoney` | `money` | `cash` |
-| `bank` | banco do personagem | `getBankMoney` | `bank` | `bank` |
-| `dirty` | item `dirtydollar` | item `dinheirosujo` | `black_money` | não existe |
+| Conta | Creative | Creative v4/v5 | vRPex | ESX | QBCore / Qbox |
+|---|---|---|---|---|---|
+| `cash` | item `dollar` | item `dollars` | `getMoney` | `money` | `cash` |
+| `bank` | banco do personagem | coluna `bank` | `getBankMoney` | `bank` | `bank` |
+| `dirty` | item `dirtydollar` | item `dollars2` | item `dinheirosujo` | `black_money` | não existe |
 
 ## Grupos
 
 | Framework | Origem | Grade |
 |---|---|---|
 | vRP Creative | `Groups.lua` | convertida: `#Hierarchy - nível` (o nível 1 do Creative é o mais alto) |
+| vRP Creative v4/v5 | `hasPermission` (sem hierarquia) | sempre `0` |
 | vRPex | `hasGroup` / `hasPermission` | sempre `0` |
 | ESX | `job` | `job.grade` |
 | QBCore | `job` + `gang` | `grade.level` |

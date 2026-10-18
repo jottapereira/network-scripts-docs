@@ -46,9 +46,25 @@ Abra `config.lua` e defina pelo menos a marca (`Config.Branding`) e os pontos de
 
 {% tabs %}
 {% tab title="vRP Creative" %}
+Vale para Creative Network, Origens, Bewitched e derivadas: a geração é identificada automaticamente.
+
 * Remova o recurso **`spawn`** (pasta `[scripts]/spawn`), ou ele abrirá junto.
 * Mantenha `barbershop` e `skinshop`: a aparência criada é salva no formato deles.
 * Os slots seguem a coluna `accounts.Characters` + 2 para quem é Premium. Para outra regra, use `Hooks.GetSlots`.
+{% endtab %}
+
+{% tab title="Creative v4/v5" %}
+* Remova **`vrp_spawn`** e **`vrp_login`** (seleção e criação antigas).
+* Os personagens continuam em `vrp_users`. A aparência criada fica no armazenamento do `one_lib`.
+* Detecção automática. Se precisar forçar: `setr one:framework "creativev5"`.
+{% endtab %}
+
+{% tab title="vRPex" %}
+* O vRPex tem **um personagem por conta**, então o produto funciona em modo de personagem único:
+  * **Conta nova**: abre direto o criador, e a identidade é gravada em `vrp_user_identities`.
+  * **Conta existente**: abre a seleção com o próprio personagem, para escolher onde acordar.
+* Remova qualquer script de spawn ou registro de identidade que abra ao conectar.
+* Excluir personagem não existe neste modo.
 {% endtab %}
 
 {% tab title="ESX" %}

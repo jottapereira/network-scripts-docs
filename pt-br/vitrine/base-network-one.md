@@ -11,7 +11,7 @@ produtos da Network Scripts já integrados entre si, com o mesmo padrão de inte
 
 {% hint style="info" %}
 **Em breve.** A base será lançada quando o pacote principal de sistemas estiver completo.
-Acompanhe no [Discord](https://discord.gg/sj3T9naGG2).
+Acompanhe no [Discord](https://discord.gg/ntqpUuHmYV).
 {% endhint %}
 
 ## O que vem incluso

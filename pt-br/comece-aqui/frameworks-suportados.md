@@ -9,12 +9,18 @@ O `one_lib` identifica o framework sozinho na inicialização. Você não precis
 | Framework | Status | Personagem identificado por | Sistema de roupa |
 |---|---|---|---|
 | **vRP Creative** (Network) | ✅ Estável | Passport | `barbershop` + `skinshop` |
+| **vRP Creative** (Origens, Bewitched e derivadas) | 🧪 Beta | Passport | `barbershop` + `skinshop` |
+| **vRP Creative v4/v5** | 🧪 Beta | user\_id (`vrp_users`) | armazenamento próprio |
+| **vRPex / vRP 1** | 🧪 Beta | user\_id (um personagem por conta) | armazenamento próprio |
 | **ESX Legacy** | 🧪 Beta | identifier (`char1:...`) | illenium-appearance, fivem-appearance ou skinchanger |
 | **QBCore** | 🧪 Beta | citizenid | illenium-appearance |
 | **Qbox** | 🧪 Beta | citizenid | illenium-appearance |
 | **Standalone** | 🧪 Beta | personagem próprio do one\_lib | armazenamento próprio |
-| **vRP Creative v5** | 🔜 Em breve | | |
-| **vRPex** | 🔜 Em breve | | |
+
+{% hint style="info" %}
+**Bases Creative:** o `one_lib` lê o código do seu `vrp` e descobre sozinho qual geração ele é, mesmo em bases
+modificadas que mantêm a estrutura original.
+{% endhint %}
 
 {% hint style="info" %}
 **Beta** significa que a integração segue o código oficial do framework, mas ainda está em validação em
