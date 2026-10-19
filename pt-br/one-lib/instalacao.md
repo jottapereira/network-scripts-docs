@@ -31,10 +31,25 @@ ensure one_characters
 Ao iniciar, o console mostra:
 
 ```
-[one_lib] v0.3.0 · framework: esx · aparência: illenium
+[one_lib] v0.5.0 · framework: esx · aparência: illenium
 ```
 
 Se algo estiver errado, force pelos [convars](convars.md).
+{% endstep %}
+
+{% step %}
+### vRP Creative: interação (opcional, recomendado)
+
+O one\_lib substitui o `target` (ALT) e o `hoverfy` ("Pressione E") da base, com marcas 3D e cartões de opções.
+No console do servidor:
+
+```
+onelib_import_target
+```
+
+Depois tire `target` e `hoverfy` do `server.cfg`, rode `refresh` e reinicie. Detalhes em
+[Interact](modulos/interact.md). Nas outras bases não há nada a fazer: com `ox_target` ou `qb-target`, a mira
+continua sendo deles.
 {% endstep %}
 {% endstepper %}
 

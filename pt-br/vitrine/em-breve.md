@@ -8,13 +8,16 @@ coverY: 0
 
 ## one\_inventory · 🛠️ em desenvolvimento
 
-Inventário completo no padrão dos nossos sistemas:
+Inventário completo no padrão dos nossos sistemas, em fase de testes:
 
 * Slots com **metadados** (número de série, durabilidade, munição, dados de documentos).
-* **Roupas como itens equipáveis**, com mochilas que viram um inventário próprio.
-* Inventários secundários: chão, porta-malas, lojas, revista policial e bancadas de fabricação.
-* Acessórios de arma instaláveis.
-* Funciona com os scripts de item que seu servidor já tem.
+* **Equipamento** com mochilas e maletas que viram um inventário próprio, e o peso do conteúdo conta.
+* Inventários secundários: chão com objetos reais, porta-malas com a tampa abrindo, porta-luvas, baús e revista.
+* Funciona com os scripts de item que seu servidor já tem e, no Creative, mantém roubos, drogas e usos de item
+  da sua base.
+* A seguir: lojas, bancadas de fabricação e acessórios de arma.
+
+Documentação: [one\_inventory](../scripts/one-inventory/README.md).
 
 ## Roadmap
 

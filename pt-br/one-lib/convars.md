@@ -18,6 +18,7 @@ Use `setr` para o que o cliente também precisa ler e `set` para o que deve fica
 | `one:locale` | `setr` | `pt-BR` | idioma padrão de todos os produtos |
 | `one:notify` | `setr` | `auto` | notificações: `one`, `ox`, `framework`, `native` |
 | `one:sounds` | `setr` | `true` | `false` desliga os sons de interface de todos os produtos |
+| `one:interact_aim` | `setr` | `auto` | mira (ALT) da interação: `auto` (usa ox\_target/qb-target se a base tiver), `one` (sempre a do one\_lib), `external` (sempre delegar) |
 | `one:log_level` | `set` | `info` | `debug`, `info`, `warn` ou `error` |
 
 ## Webhooks

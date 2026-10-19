@@ -54,8 +54,23 @@ Reiniciar o `one_lib` com o servidor cheio não perde ninguém: ele reconstrói 
 | Qbox | `jobs` + `gangs` (múltiplos) | `grade` |
 | Standalone | ACE: `add_ace group.police one.group.police allow` | |
 
+## Interação (One.Interact)
+
+Marcas por proximidade são sempre do one\_lib. A mira (ALT) depende do que a base já tem:
+
+| Base | Mira (ALT) | Regras de bloqueio |
+|---|---|---|
+| vRP Creative | one\_lib (substitui `target` e `hoverfy` da base) | `Handcuff`, `Carry`, `Cancel`, `Buttons`, `Commands`, `Camera`, `Freecam`, `Active` |
+| ESX | `ox_target` se houver; senão one\_lib | morto, algemado (`esx_policejob`) |
+| QBCore | `qb-target` / `ox_target` se houver; senão one\_lib | `isdead`, `inlaststand`, `ishandcuffed` |
+| Qbox | `ox_target` se houver; senão one\_lib | `isdead`, `inlaststand`, `ishandcuffed` |
+| demais | one\_lib | morto |
+
+Com ox\_target ou qb-target, as opções de mira dos produtos (porta-malas, por exemplo) são registradas **dentro**
+deles, para não existirem dois sistemas na mesma tecla. Forçar: `setr one:interact_aim "one" | "external"`.
+
 ## Limitações conhecidas
 
-* **vRP Creative**: cobrar em espécie usa o `TakeItem` do Creative, que remove de **um** slot. Dinheiro dividido em duas pilhas pode não ser cobrado mesmo com saldo total suficiente.
+* **vRP Creative**: sem o one\_inventory, cobrar em espécie usa o `TakeItem` do Creative, que remove de **um** slot. Dinheiro dividido em duas pilhas pode não ser cobrado mesmo com saldo total suficiente.
 * **vRPex**: não tem grade de cargo; pedir `minGrade` maior que `0` sempre retorna falso.
 * **QBCore / Qbox**: não há conta de dinheiro sujo (o QBCore usa o item `markedbills`).

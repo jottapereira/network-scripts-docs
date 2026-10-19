@@ -45,7 +45,7 @@ Cada produto tem uma tabela "o que desativar" por framework na sua página de in
 As tabelas do banco são criadas sozinhas no primeiro start. No console deve aparecer:
 
 ```
-[one_lib] v0.3.0 · framework: <seu framework> · aparência: <seu sistema de roupa>
+[one_lib] v0.5.0 · framework: <seu framework> · aparência: <seu sistema de roupa>
 ```
 
 Pronto. Entre no servidor e teste.

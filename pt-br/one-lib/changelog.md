@@ -4,6 +4,16 @@ description: Histórico de versões do one_lib.
 
 # Changelog
 
+## 0.5.0
+
+* `One.Interact`: interação no mundo (marca ao chegar perto, mira com ALT, cartão de opções com atalhos,
+  opções de segurar e bloqueadas com motivo). Interface própria do one\_lib.
+
+## 0.4.0
+
+* `One.Inventory`: dar e consumir itens em qualquer inventário (one\_inventory, ox, qb ou o nativo do framework).
+* `One.Status.Get`: valores atuais de fome, sede e estresse.
+
 ## 0.3.0
 
 * Personagens para ESX Legacy, QBCore, Qbox e Standalone (multipersonagem próprio).
