@@ -18,9 +18,9 @@ ensure qbx_core
 
 ensure one_lib
 ensure one_inventory
-
-# depois: [qbx], [standalone]...
 ```
+
+Depois deles vêm os demais recursos da base (as pastas `qbx` e `standalone`).
 {% endstep %}
 
 {% step %}

@@ -14,9 +14,9 @@ ensure qb-core
 
 ensure one_lib
 ensure one_hud
-
-# depois: [qb], [standalone]...
 ```
+
+Depois deles vêm os demais recursos da base (as pastas `qb` e `standalone`).
 {% endstep %}
 
 {% step %}
