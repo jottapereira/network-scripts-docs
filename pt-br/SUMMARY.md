@@ -33,6 +33,7 @@
     * [Creative v4/v5](scripts/one-inventory/instalacao/creative-v5.md)
     * [vRPex / vRP 1](scripts/one-inventory/instalacao/vrpex.md)
     * [ESX Legacy](scripts/one-inventory/instalacao/esx.md)
+    * [QBCore](scripts/one-inventory/instalacao/qbcore.md)
   * [Configuração](scripts/one-inventory/configuracao.md)
   * [Integração com outros scripts](scripts/one-inventory/integracoes.md)
   * [Compatibilidade e migração](scripts/one-inventory/compatibilidade.md)
