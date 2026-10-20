@@ -41,7 +41,7 @@ Scripts feitos para `ox_inventory` e `qb-inventory` funcionam sem alteração. V
 
 ## Páginas
 
-* [Instalação](instalacao.md): um guia por base
+* [Instalação](instalacao/README.md): um guia por base
 * [Configuração](configuracao.md)
 * [Integração com outros scripts](integracoes.md)
 * [Compatibilidade e migração](compatibilidade.md)

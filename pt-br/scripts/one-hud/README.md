@@ -36,7 +36,7 @@ desligue os equivalentes da sua base e **os scripts que você já tem passam a u
 
 ## Páginas
 
-* [Instalação](instalacao.md): um guia por base
+* [Instalação](instalacao/README.md): um guia por base
 * [Configuração](configuracao.md)
 * [Integração com outros scripts](integracoes.md)
 * [Compatibilidade](compatibilidade.md)

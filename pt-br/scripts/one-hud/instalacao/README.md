@@ -4,22 +4,22 @@ description: Escolha a sua base e siga o passo a passo. Cada guia leva de 5 a 10
 
 # Instalação
 
-O one\_hud funciona em qualquer base suportada pelo [one\_lib](../../one-lib/README.md). O que muda de uma base para
+O one\_hud funciona em qualquer base suportada pelo [one\_lib](../../../one-lib/README.md). O que muda de uma base para
 outra é **o que desligar** e se é preciso **uma linha** no core da base para as telas que moram dentro dele.
 
 | Base | Guia | Desligar | Linha no core |
 |---|---|---|---|
-| vRP Creative | [Creative](instalacao/creative.md) | `hud`, `notify`, `notifyitem`, `request`, `keyboard` | — |
-| Creative v4/v5 | [Creative v4/v5](instalacao/creative-v5.md) | HUD e notify da base | `vrp` (opcional) |
-| vRPex / vRP 1 | [vRPex](instalacao/vrpex.md) | HUD e notify da base | `vrp` (opcional) |
-| ESX Legacy | [ESX](instalacao/esx.md) | `esx_hud`, `esx_notify`, `esx_progressbar`, `esx_textui` | — |
-| QBCore | [QBCore](instalacao/qbcore.md) | `qb-hud`, `progressbar`, `qb-input` | `qb-core` |
-| Qbox | [Qbox](instalacao/qbox.md) | `qbx_hud` | `ox_lib` |
-| Standalone | [Standalone](instalacao/standalone.md) | — | — |
+| vRP Creative | [Creative](creative.md) | `hud`, `notify`, `notifyitem`, `request`, `keyboard` | — |
+| Creative v4/v5 | [Creative v4/v5](creative-v5.md) | HUD e notify da base | `vrp` (opcional) |
+| vRPex / vRP 1 | [vRPex](vrpex.md) | HUD e notify da base | `vrp` (opcional) |
+| ESX Legacy | [ESX](esx.md) | `esx_hud`, `esx_notify`, `esx_progressbar`, `esx_textui` | — |
+| QBCore | [QBCore](qbcore.md) | `qb-hud`, `progressbar`, `qb-input` | `qb-core` |
+| Qbox | [Qbox](qbox.md) | `qbx_hud` | `ox_lib` |
+| Standalone | [Standalone](standalone.md) | — | — |
 
 ## Comum a todas as bases
 
-* **Requisitos:** [`one_lib`](../../one-lib/instalacao.md) **0.6 ou mais novo**, iniciado antes.
+* **Requisitos:** [`one_lib`](../../../one-lib/instalacao.md) **0.6 ou mais novo**, iniciado antes.
 * **Ordem no `server.cfg`:**
 
 ```cfg
@@ -54,7 +54,7 @@ client_scripts {
 
 1. Entre no servidor: a HUD aparece depois que o personagem carrega.
 2. `/hud` esconde e mostra.
-3. Ajuste em [Configuração](configuracao.md).
+3. Ajuste em [Configuração](../configuracao.md).
 
 ## Teclas padrão
 

@@ -16,7 +16,7 @@ funcionam sem alteração:
 
 No **vRP / Creative / Creative v4-v5 / vRPex**, a ponte do `vrp` faz o mesmo papel com as funções de item do
 core (`GiveItem`, `giveInventoryItem`, `tryGetInventoryItem`, `getInventory`...). Ver o guia da sua base em
-[Instalação](instalacao.md).
+[Instalação](instalacao/README.md).
 
 Itens usáveis registrados no framework continuam funcionando: `QBCore.Functions.CreateUseableItem`,
 `exports.qbx_core:CreateUseableItem`, `ESX.RegisterUsableItem`, as escolhas de uso do vRP 1
