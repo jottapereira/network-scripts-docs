@@ -4,6 +4,13 @@ description: Histórico de versões do one_lib.
 
 # Changelog
 
+## 0.6.0
+
+* `One.Progress`, `One.Input`, `One.Confirm`, `One.Request` e `One.TextUI`: telas com o one\_hud, ox\_lib ou
+  versão simples ([página](modulos/tela.md)).
+* `One.Notify` usa o one\_hud quando instalado.
+* Interação: ox\_target e qb-target recebem as opções de mira dos produtos; regras de bloqueio por base.
+
 ## 0.5.0
 
 * `One.Interact`: interação no mundo (marca ao chegar perto, mira com ALT, cartão de opções com atalhos,

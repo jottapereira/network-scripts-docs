@@ -13,3 +13,4 @@ description: Histórico de versões do one_inventory.
 * Interação 3D pelo one\_lib: marca ao chegar perto de lojas, bancadas e baús; porta-malas mirando no carro.
 * Bases: vRP Creative (com importação do gameplay da base), Creative v4/v5, vRPex, ESX, QBCore, Qbox e Standalone.
 * Compatibilidade com scripts de `ox_inventory` e `qb-inventory`; migradores `oneinv_migrate ox|qb`.
+* Dois layouts (`Config.Layout`): `open` (padrão, compacto e com o jogo visível) e `classic`.

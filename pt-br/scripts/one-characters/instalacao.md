@@ -8,7 +8,7 @@ description: Instalação do one_characters em cada framework.
 {% step %}
 ### Instale o one\_lib
 
-O `one_characters` precisa do `one_lib` **v0.3 ou superior**. Veja [Instalação do one\_lib](../../one-lib/instalacao.md).
+O `one_characters` precisa do `one_lib` **v0.6.1 ou superior**. Veja [Instalação do one\_lib](../../one-lib/instalacao.md).
 {% endstep %}
 
 {% step %}
@@ -60,11 +60,35 @@ Vale para Creative Network, Origens, Bewitched e derivadas: a geração é ident
 {% endtab %}
 
 {% tab title="vRPex" %}
-* O vRPex tem **um personagem por conta**, então o produto funciona em modo de personagem único:
-  * **Conta nova**: abre direto o criador, e a identidade é gravada em `vrp_user_identities`.
-  * **Conta existente**: abre a seleção com o próprio personagem, para escolher onde acordar.
-* Remova qualquer script de spawn ou registro de identidade que abra ao conectar.
+O vRPex tem **um personagem por conta**, então o produto funciona em modo de personagem único:
+
+* **Conta nova**: abre direto o criador. Nome e idade são gravados em `vrp_user_identities`.
+* **Conta existente**: abre a tela com o próprio personagem, só para escolher onde acordar.
+* Quem fechar o jogo no meio da criação volta para o criador no próximo acesso.
 * Excluir personagem não existe neste modo.
+
+**O que remover** (tire o `ensure` do `server.cfg`): todo script que abre ao conectar para criar personagem,
+registrar identidade ou escolher spawn. Os nomes mais comuns no vRPex: `vrp_creation`, `vrp_character`,
+`vrp_identity` (só a tela de registro), `vrp_spawn`, `nation_creator`, `creator`, `spawnselector`.
+Na dúvida: conecte com uma conta nova; se aparecer qualquer tela além da do `one_characters`, o script
+dela ainda está ligado.
+
+**O que manter**: o `vrp` e o `spawnmanager`, sem alterações. Lojas de roupa e barbearia continuam funcionando.
+
+**Onde fica cada coisa**
+
+| Dado | Onde | Observação |
+|---|---|---|
+| Nome e idade | `vrp_user_identities` | o próprio vRP |
+| Modelo e roupa | datatable do vRP (`customization`) | o produto grava o resultado do criador direto no vRP. Compras em loja de roupa continuam valendo |
+| Rosto (herança, traços, olhos, cabelo, barba, maquiagem) | tabela `one_appearance` | o vRP não guarda rosto; o produto reaplica a cada entrada |
+| Data de nascimento, nacionalidade, biografia | tabela `one_characters` | |
+| Último local | datatable do vRP (`position`) | o local escolhido na entrada é gravado na hora |
+
+{% hint style="warning" %}
+Se o seu servidor tem uma **barbearia que salva o rosto por conta própria**, o rosto do criador é reaplicado ao
+entrar e pode sobrescrever o da barbearia. Fale com o suporte para integrar as duas.
+{% endhint %}
 {% endtab %}
 
 {% tab title="ESX" %}

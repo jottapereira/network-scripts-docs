@@ -9,6 +9,7 @@ description: config.lua, items.lua e as regras do seu servidor.
 | Opção | Padrão | O que faz |
 |---|---|---|
 | `Config.OpenKey` | `TAB` | Tecla de abrir (o jogador pode trocar nas configurações do FiveM) |
+| `Config.Layout` | `'open'` | `'open'`: compacto, o jogo continua visível e a câmera não mexe, acessórios numa coluna ao lado do inventário. `'classic'`: tela escurecida, cabeçalho e personagem no centro com o equipamento em volta (`Config.Preview`) |
 | `Config.Player.Slots` / `Weight` / `Hotbar` | `30` / `30.0` kg / `5` | Bolsos do personagem |
 | `Config.Equipment` | chapéu, óculos, máscara, colete, luvas, mochila | Slots de equipamento |
 | `Config.BackpackSlots` | `20` | Slots de uma mochila que só define o peso |

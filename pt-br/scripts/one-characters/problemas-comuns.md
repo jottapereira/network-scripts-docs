@@ -63,6 +63,36 @@ Se aparecer `one`, seu sistema não foi reconhecido; force com `setr one:appeara
 
 <details>
 
+<summary>vRPex: jogador antigo foi parar no criador</summary>
+
+O produto considera "conta nova" quem o vRP marcou como primeiro acesso (`last_login` vazio) ou quem começou a
+criação e não terminou. Se um jogador antigo caiu no criador, alguém zerou o `last_login` dele no banco.
+Basta criar o personagem de novo; nome e idade são atualizados na conta existente, sem perder nada do vRP.
+
+</details>
+
+<details>
+
+<summary>vRPex: o personagem é puxado para fora da tela de seleção logo ao conectar</summary>
+
+O produto espera o vRP posicionar o jogador (evento `playerSpawned` do `spawnmanager`) antes de abrir a cena.
+Se o seu vRPex não usa o `spawnmanager`, ele espera até 15 segundos. Confira se o `spawnmanager` está com
+`ensure` e se nenhum script de spawn antigo continua ligado.
+
+</details>
+
+<details>
+
+<summary>vRPex: a roupa voltou para a do criador depois de comprar na loja</summary>
+
+Não deve acontecer: no vRPex a roupa é sempre a que o vRP salvou, e o produto só reaplica o rosto. Se acontecer,
+algum script antigo de criação ainda está aplicando a roupa ao conectar. Desligue-o (veja a
+[Instalação](instalacao.md#por-framework), aba vRPex).
+
+</details>
+
+<details>
+
 <summary>"Calma! Aguarde um instante."</summary>
 
 É o limite de frequência protegendo o servidor contra spam. Aparece só quando o jogador repete a mesma

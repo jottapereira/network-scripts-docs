@@ -4,6 +4,16 @@ description: Histórico de versões do one_characters.
 
 # Changelog
 
+## 1.2.0
+
+* vRPex: roupa e modelo ficam no próprio vRP (lojas de roupa continuam valendo); o rosto do criador é
+  reaplicado a cada entrada.
+* vRPex: a tela só abre depois que o vRP posiciona o jogador.
+* vRPex: o local escolhido é gravado na hora no vRP.
+* vRPex: quem fecha o jogo no meio da criação volta ao criador.
+* vRPex: o sexo do personagem aparece certo na seleção.
+* Requer one\_lib 0.6.1.
+
 ## 1.1.0
 
 * Multi-framework: ESX Legacy, QBCore, Qbox, Standalone, Creative v4/v5 e vRPex, além do vRP Creative.

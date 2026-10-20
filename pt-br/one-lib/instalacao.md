@@ -31,7 +31,7 @@ ensure one_characters
 Ao iniciar, o console mostra:
 
 ```
-[one_lib] v0.5.0 · framework: esx · aparência: illenium
+[one_lib] v0.6.0 · framework: esx · aparência: illenium
 ```
 
 Se algo estiver errado, force pelos [convars](convars.md).

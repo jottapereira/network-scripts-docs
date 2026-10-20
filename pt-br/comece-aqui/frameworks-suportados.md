@@ -34,6 +34,7 @@ servidores reais. Se encontrar qualquer problema, abra um ticket no Discord com 
 |---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | [one\_characters](../scripts/one-characters/README.md) | ✅ | 🧪 | 🧪 | 🧪 | 🧪 | 🧪 | 🧪 |
 | [one\_inventory](../scripts/one-inventory/README.md) | ✅ | 🧪 | 🧪 | 🧪 | 🧪 | 🧪 | 🧪 |
+| [one\_hud](../scripts/one-hud/README.md) | 🧪 | 🧪 | 🧪 | 🧪 | 🧪 | 🧪 | 🧪 |
 | [Interação 3D](../one-lib/modulos/interact.md) | ✅ substitui `target`/`hoverfy` | ✅ | ✅ | ✅ convive com `ox_target` | ✅ convive com `qb-target` | ✅ convive com `ox_target` | ✅ |
 
 Cada produto tem um guia de instalação **por base**, com o que desligar, o que migrar e como conferir.
