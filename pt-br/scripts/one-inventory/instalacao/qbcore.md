@@ -1,5 +1,5 @@
 ---
-description: QBCore com qb-inventory (ou forks: ps-inventory, lj-inventory). Cerca de 10 minutos.
+description: "QBCore com qb-inventory ou forks (ps-inventory, lj-inventory). Cerca de 10 minutos."
 ---
 
 # Instalação: QBCore
