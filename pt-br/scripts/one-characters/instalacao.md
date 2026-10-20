@@ -67,6 +67,18 @@ O vRPex tem **um personagem por conta**, então o produto funciona em modo de pe
 * Quem fechar o jogo no meio da criação volta para o criador no próximo acesso.
 * Excluir personagem não existe neste modo.
 
+**Confira o relatório no console** ao iniciar o servidor. O one\_lib mostra o que encontrou na sua base:
+
+```
+[one_lib] compatibilidade com a base (vrpex): tudo encontrado
+[one_lib]   funções: getCore
+[one_lib]   identidade: vrp_user_identities (nome=nome, sobrenome=sobrenome, idade=idade, nascimento=data_nascimento)
+[one_lib]   personagem criado: vrp_users_infos.controller
+```
+
+Linhas em amarelo (`faltando ...`) dizem o que não foi encontrado e o que deixa de funcionar. Mande esse trecho ao
+suporte se algo não estiver certo.
+
 **O que remover** (tire o `ensure` do `server.cfg`): todo script que abre ao conectar para criar personagem,
 registrar identidade ou escolher spawn. Os nomes mais comuns no vRPex: `vrp_creation`, `vrp_character`,
 `vrp_identity` (só a tela de registro), `vrp_spawn`, `nation_creator`, `creator`, `spawnselector`.

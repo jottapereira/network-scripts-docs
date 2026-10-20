@@ -18,3 +18,6 @@ description: Histórico de versões do one_inventory.
   `skinshop` da base, então lojas de roupa não a tiram). Em outras bases, via `Config.EquipmentVisuals`.
 * Item recebido com os bolsos cheios vai para a mochila equipada antes de cair no chão; scripts que conferem
   espaço (`CheckWeight`, `CanCarry`) contam a mochila.
+* Reiniciar o one\_inventory com jogadores online: sem erro do oxmysql no console e sem perder plantas
+  aprendidas, munições e acessórios do gameplay do Creative.
+* Sem o aviso `could not find file web/images/*.png` no start (a pasta vem com um README explicando o uso).
