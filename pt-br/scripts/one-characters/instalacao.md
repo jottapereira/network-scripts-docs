@@ -54,18 +54,27 @@ Vale para Creative Network, Origens, Bewitched e derivadas: a geração é ident
 {% endtab %}
 
 {% tab title="Creative v4/v5" %}
-* Remova **`vrp_spawn`** e **`vrp_login`** (seleção e criação antigas).
-* Os personagens continuam em `vrp_users`. A aparência criada fica no armazenamento do `one_lib`.
+Vale para as variantes "Three" (`vrp_users`) e "Summerz / South Network" (`summerz_characters`): o one\_lib
+identifica qual é e usa as consultas e funções da própria base.
+
+* Remova a seleção e criação antigas: **`vrp_spawn`** e **`vrp_login`** (Three) ou **`spawn`** (Summerz).
+* Os personagens continuam na tabela da sua base; personagem novo é criado pelas mesmas consultas dela (com
+  telefone, serial, tipo sanguíneo e conta no banco).
 * Detecção automática. Se precisar forçar: `setr one:framework "creativev5"`.
 {% endtab %}
 
 {% tab title="vRPex" %}
-O vRPex tem **um personagem por conta**, então o produto funciona em modo de personagem único:
+No vRPex cada personagem é um `user_id` e o vRP carrega um por conexão. O produto dá **vários personagens por
+conta** mesmo assim, sem editar a base:
 
-* **Conta nova**: abre direto o criador. Nome e idade são gravados em `vrp_user_identities`.
-* **Conta existente**: abre a tela com o próprio personagem, só para escolher onde acordar.
+* **Conta nova**: abre direto o criador. Nome, idade e nascimento vão para as colunas da sua base.
+* **Conta com personagens**: a seleção mostra todos (até `Config.Slots`). Entrar com o personagem que já está
+  carregado é imediato; entrar com **outro**, ou criar um **novo**, reconecta o jogador (alguns segundos, botão
+  "Reconectar" do FiveM) e o vRP carrega o personagem escolhido.
+* Personagem novo herda a **whitelist** dos outros personagens da mesma conta.
 * Quem fechar o jogo no meio da criação volta para o criador no próximo acesso.
 * Excluir personagem não existe neste modo.
+* Base sem a tabela `vrp_user_ids` (raro): fica um personagem por conta, como o vRPex original.
 
 **Confira o relatório no console** ao iniciar o servidor. O one\_lib mostra o que encontrou na sua base:
 
