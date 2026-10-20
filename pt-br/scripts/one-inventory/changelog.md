@@ -14,3 +14,7 @@ description: Histórico de versões do one_inventory.
 * Bases: vRP Creative (com importação do gameplay da base), Creative v4/v5, vRPex, ESX, QBCore, Qbox e Standalone.
 * Compatibilidade com scripts de `ox_inventory` e `qb-inventory`; migradores `oneinv_migrate ox|qb`.
 * Dois layouts (`Config.Layout`): `open` (padrão, compacto e com o jogo visível) e `classic`.
+* Mochila nas costas: no Creative, a mochila equipada aparece no personagem como no inventário antigo (pelo
+  `skinshop` da base, então lojas de roupa não a tiram). Em outras bases, via `Config.EquipmentVisuals`.
+* Item recebido com os bolsos cheios vai para a mochila equipada antes de cair no chão; scripts que conferem
+  espaço (`CheckWeight`, `CanCarry`) contam a mochila.

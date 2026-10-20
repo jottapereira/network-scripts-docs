@@ -86,6 +86,22 @@ Config.Burden = { Enabled = true, NoSprint = 0.85, Slow = 0.95, SlowRate = 0.85 
 Com a carga (bolsos + mochila) acima de 85% da capacidade, o personagem não corre; acima de 95%, anda mais
 devagar e não pula. Calculado quando o peso muda: sem custo enquanto a carga é normal.
 
+### Mochilas
+
+Uma mochila equipada no slot **Mochila** vira um inventário próprio, mostrado embaixo dos bolsos. O peso dela vem
+do item (no Creative, o campo `Backpack`); os slots, do item ou de `Config.BackpackSlots`.
+
+* Item recebido com os bolsos cheios vai para a mochila antes de cair no chão.
+* Para tirar ou trocar, a mochila precisa estar vazia. Mochilas e maletas não entram uma na outra.
+* **Nas costas:** no Creative, aparece no personagem automaticamente (usa o `Skinshop` do item e o `skinshop` da
+  base, como o inventário antigo). Nas outras bases, defina a peça em `Config.EquipmentVisuals`:
+
+```lua
+Config.EquipmentVisuals = {
+    backpack = { component = 5, male = { 45, 0 }, female = { 45, 0 } },   -- item = { drawable, textura }
+}
+```
+
 ### Acessórios como itens
 
 ```lua
