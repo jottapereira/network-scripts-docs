@@ -7,6 +7,10 @@ description: Documentação técnica do one_characters.
 Seleção, criação e spawn de personagem. Para a apresentação do produto, veja a
 [vitrine](../../vitrine/one-characters.md).
 
+{% embed url="https://www.youtube.com/watch?v=S4YHOlFGhF8" %}
+Showcase do one\_characters.
+{% endembed %}
+
 ## Fluxo
 
 ```
@@ -29,7 +33,7 @@ Jogador conecta
 | `locales/pt-BR.lua` · `locales/en.lua` | ✅ | todos os textos, inclusive os da interface |
 | `server/open.lua` | ✅ | slots, spawns extras, itens iniciais ([Personalização](personalizacao.md)) |
 | `client/open.lua` | ✅ | o que acontece ao aparecer na cidade |
-| `sql/001_init.sql` | ✅ | tabela `one_characters` (criada automaticamente) |
+| `sql/*.sql` | ✅ | tabela `one_characters` (criada e atualizada automaticamente) |
 | demais arquivos | protegido | |
 
 ## Banco de dados
@@ -45,3 +49,4 @@ personagem continuam nas tabelas do seu framework.
 | `bio` | história |
 | `playtime` | segundos jogados |
 | `last_login` | último acesso (unix) |
+| `pending` | vRPex: criação começada e não concluída (volta ao criador no próximo acesso) |

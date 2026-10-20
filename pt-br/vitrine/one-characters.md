@@ -12,6 +12,10 @@ A tela de personagens é a primeira coisa que todo jogador vê no seu servidor. 
 esse momento numa experiência de jogo: seus personagens aparecem **no mundo**, a câmera é cinematográfica,
 e a entrada na cidade usa a mesma transição do GTA.
 
+{% embed url="https://www.youtube.com/watch?v=S4YHOlFGhF8" %}
+Showcase do one\_characters: seleção, criação e entrada na cidade.
+{% endembed %}
+
 {% hint style="success" %}
 **Disponível** para vRP Creative (todas as gerações), vRPex, ESX, QBCore, Qbox e Standalone. [Comprar no Discord](https://discord.gg/ntqpUuHmYV)
 {% endhint %}
