@@ -27,6 +27,14 @@
   * [Integração com outros scripts](scripts/one-characters/integracoes.md)
   * [Problemas comuns](scripts/one-characters/problemas-comuns.md)
   * [Changelog](scripts/one-characters/changelog.md)
+* [one\_inventory](scripts/one-inventory/README.md)
+  * [Instalação](scripts/one-inventory/instalacao/README.md)
+  * [Configuração](scripts/one-inventory/configuracao.md)
+  * [Integração com outros scripts](scripts/one-inventory/integracoes.md)
+  * [Compatibilidade e migração](scripts/one-inventory/compatibilidade.md)
+  * [Extensão Creative](scripts/one-inventory/extensao-creative.md)
+  * [Problemas comuns](scripts/one-inventory/problemas-comuns.md)
+  * [Changelog](scripts/one-inventory/changelog.md)
 
 ## Framework: one\_lib
 
