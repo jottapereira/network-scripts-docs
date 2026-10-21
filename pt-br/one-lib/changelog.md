@@ -4,6 +4,15 @@ description: Histórico de versões do one_lib.
 
 # Changelog
 
+## 0.6.2 (em teste)
+
+* Nomes das funções do vRP achados automaticamente em bases misturadas (vRPex com funções do Creative e vice-versa).
+* Bases que não deixam ler as pastas do `vrp`: os arquivos são achados pelo nome e nada é dado como "faltando" à toa.
+* Banco fora do ar não trava mais o start.
+* Funciona nos artefatos novos do FiveM (a detecção não depende mais do GlobalState).
+* vRPex com vários personagens: personagem novo aparece em `vrp_users` e a troca não reconecta no personagem errado.
+* Código importado das bases (itens, HUD) roda isolado sem travar as chamadas entre servidor e cliente.
+
 ## 0.6.0
 
 * `One.Progress`, `One.Input`, `One.Confirm`, `One.Request` e `One.TextUI`: telas com o one\_hud, ox\_lib ou

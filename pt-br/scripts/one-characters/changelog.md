@@ -4,6 +4,11 @@ description: Histórico de versões do one_characters.
 
 # Changelog
 
+## 1.2.1 (em teste)
+
+* O personagem fica parado no criador mesmo quando a base tenta movê-lo ao entrar.
+* A foto de cada personagem na seleção é atualizada ao carregar (não mostra mais a foto de outro).
+
 ## 1.2.0
 
 * vRPex: roupa e modelo ficam no próprio vRP (lojas de roupa continuam valendo); o rosto do criador é

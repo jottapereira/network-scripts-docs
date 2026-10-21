@@ -8,6 +8,8 @@ description: Histórico de versões do one_hud.
 
 * vRPex com HUD própria (lotus e derivados): gameplay importado com `onehud_import` (relógio/clima, cinto, nitro,
   recrutamento, anúncios); anéis de fome/sede somem em bases sem esse status.
+* Creative v5 (Summerz): HUD da base importada com `onehud_import` (cinto, relógio, interações e telas de
+  pergunta/pedido no one\_hud); o chat passa para o recurso `chat` do FiveM.
 * HUD: status com regras de visibilidade, voz e rádio, dinheiro com variação, chips do topo, arma, minimapa
   encaixado, rua, zona, bússola, hora e clima, velocímetro com RPM segmentado, marcha, combustível, motor,
   indicadores, nitro e limitador.

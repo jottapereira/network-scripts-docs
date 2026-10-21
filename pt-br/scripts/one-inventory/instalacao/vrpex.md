@@ -53,14 +53,27 @@ Depois:
 
 1. Tire `ensure inventory` do `server.cfg` (o one\_inventory substitui).
 2. **Não apague a pasta `inventory`**: o `vrp` ainda lê a lista de itens de lá.
+
+O comando também descobre sozinho quem tira o item ao usar (o próprio item ou o inventário antes) e devolve o
+item quando o uso dá errado, como o inventário antigo fazia.
+
+Se o console disser que o código chama uma função "que nenhum arquivo do cliente achado tem", e a sua base tiver
+esse arquivo em outro lugar, rode de novo passando o caminho dentro do `inventory`:
+
+```
+oneinv_import client/pasta/arquivo.lua
+```
 {% endstep %}
 
 {% step %}
 ### Imagens
 
-Copie os PNG dos itens para `one_inventory/web/images/<item>.png`. Na base com a pasta `inventory`, as imagens
-geralmente estão em `inventory/web/build/...` (procure por arquivos `.png` com o nome dos itens). Item sem imagem
-mostra o ícone da categoria.
+* **O inventário antigo buscava as imagens num site** (ex.: `http://1.2.3.4/images/`): nada a fazer, o
+  one\_inventory usa o mesmo endereço sozinho.
+* **As imagens ficavam dentro da pasta `inventory`**: copie os PNG para `one_inventory/web/images/<item>.png`
+  (procure por arquivos `.png` com o nome dos itens, geralmente em `inventory/web/...`).
+
+Item sem imagem mostra o ícone da categoria.
 {% endstep %}
 
 {% step %}

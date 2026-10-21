@@ -8,6 +8,10 @@ description: Histórico de versões do one_inventory.
 
 * vRPex com inventário em recurso separado (lotus e derivados): itens lidos da base, uso dos itens importado com
   `oneinv_import`, peso pela regra da base, itens antigos migrados na primeira entrada, aviso de item da base.
+* vRPex: o import descobre sozinho quem tira o item ao usar (o próprio item ou o inventário antes de usar) e
+  devolve o item quando o uso falha; inventário com slots (forks) reconhecido; imagens do inventário antigo
+  encontradas automaticamente (mesmo quando ficam num site).
+* vRPex: arquivos extras do cliente podem ser passados no comando (`oneinv_import client/pasta/arquivo.lua`).
 * Inventário completo: bolsos, equipamento, mochila, containers com peso do conteúdo, chão, porta-malas com
   tampa e animação, porta-luvas, baús, revista, hotbar, armas, munição e acessórios de arma.
 * Lojas (compra/venda, estoque gravado, moeda em dinheiro ou item) e bancadas (fila que corre offline).
