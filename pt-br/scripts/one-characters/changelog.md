@@ -6,6 +6,9 @@ description: Histórico de versões do one_characters.
 
 ## 1.2.1 (em teste)
 
+* vRPex: vários personagens por conta, com criar, trocar e excluir, colando um bloco no `vrp` ([instalação](instalacao.md)).
+  Sem o bloco: um personagem por conta.
+* Foto da seleção e do criador sempre com o rosto certo.
 * vRPex: personagem criado não pede para ser criado de novo e aparece na seleção.
 * O criador mostra só os cabelos que existem na sua base; `Config.HiddenHair` esconde os que você não quiser.
 * Cor das telas configurável ([Cor das telas](../../comece-aqui/cor-das-telas.md)).

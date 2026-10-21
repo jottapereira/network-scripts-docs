@@ -64,17 +64,54 @@ identifica qual é e usa as consultas e funções da própria base.
 {% endtab %}
 
 {% tab title="vRPex" %}
-No vRPex cada personagem é um `user_id` e o vRP carrega um por conexão. O produto dá **vários personagens por
-conta** mesmo assim, sem editar a base:
+No vRPex cada personagem é um `user_id`, e é o próprio `vrp` que escolhe qual carregar quando o jogador conecta.
 
-* **Conta nova**: abre direto o criador. Nome, idade e nascimento vão para as colunas da sua base.
-* **Conta com personagens**: a seleção mostra todos (até `Config.Slots`). Entrar com o personagem que já está
-  carregado é imediato; entrar com **outro**, ou criar um **novo**, reconecta o jogador (alguns segundos, botão
-  "Reconectar" do FiveM) e o vRP carrega o personagem escolhido.
-* Personagem novo herda a **whitelist** dos outros personagens da mesma conta.
-* Quem fechar o jogo no meio da criação volta para o criador no próximo acesso.
-* Excluir personagem não existe neste modo.
-* Base sem a tabela `vrp_user_ids` (raro): fica um personagem por conta, como o vRPex original.
+**Sem mexer no vrp: um personagem por conta** (o padrão do vRPex). Conta nova abre o criador; nome, idade e
+nascimento vão para as colunas da sua base. Depois disso, a tela é só para escolher onde acordar.
+
+**Vários personagens: um bloco no `vrp`.** O `vrp` pergunta ao one\_lib qual personagem carregar. Cole no
+`playerConnecting` do `vrp` (geralmente `vrp/base.lua`), logo **depois** da linha que pega o `user_id`
+(`local user_id = vRP.getUserIdByIdentifiers(ids)` e o `if not user_id then ... end` que vem em seguida):
+
+```lua
+-- [one_characters] VÁRIOS PERSONAGENS
+if GetResourceState("one_lib") == "started" then
+	local ok, chosen = pcall(function() return exports.one_lib:VrpexCharacter(ids, user_id) end)
+	if ok and chosen == "new" then
+		local rows = exports["oxmysql"]:executeSync("INSERT INTO vrp_users(whitelist) SELECT whitelist FROM vrp_users WHERE id = ?", { user_id })
+		if rows and rows.insertId then
+			vRP.execute("vRP/init_users_infos",{ user_id = rows.insertId })   -- só se a sua base tiver essa consulta
+			TriggerEvent("vRP/new_user_created", rows.insertId)
+			exports.one_lib:VrpexAdopt(ids, rows.insertId)
+			user_id = rows.insertId
+		end
+	elseif ok and tonumber(chosen) then
+		user_id = tonumber(chosen)
+	end
+end
+```
+
+E no **fim** do mesmo arquivo:
+
+```lua
+SetConvar("one:vrpex:multichar", "true")
+```
+
+{% hint style="info" %}
+O nome da variável dos identificadores (`ids`) e da criação de conta podem mudar de base para base. Se a sua base
+for diferente, o suporte adapta o bloco na instalação.
+{% endhint %}
+
+Com o bloco:
+
+* A seleção mostra todos os personagens da conta (até `Config.Slots`). Entrar com **outro**, ou criar um **novo**,
+  reconecta o jogador (alguns segundos) e o `vrp` carrega o escolhido.
+* **Excluir** personagem tira ele da seleção (os dados ficam no banco). O personagem em uso não pode ser excluído.
+* Personagem novo herda a **whitelist** da conta.
+* O próximo acesso entra no último personagem usado.
+* O one\_lib não mexe em `vrp_user_ids` nem nos identificadores: quem decide é o `vrp`, com a resposta do one\_lib.
+
+O console confirma ao iniciar: `vários personagens: sim (patch no vrp ativo)`.
 
 **Confira o relatório no console** ao iniciar o servidor. O one\_lib mostra o que encontrou na sua base:
 
@@ -94,7 +131,11 @@ registrar identidade ou escolher spawn. Os nomes mais comuns no vRPex: `vrp_crea
 Na dúvida: conecte com uma conta nova; se aparecer qualquer tela além da do `one_characters`, o script
 dela ainda está ligado.
 
-**O que manter**: o `vrp` e o `spawnmanager`, sem alterações. Lojas de roupa e barbearia continuam funcionando.
+**O que manter**: o `vrp` (só com o bloco acima, se quiser vários personagens) e o `spawnmanager`. Lojas de
+roupa e barbearia continuam funcionando.
+
+**Diagnóstico**: `onelib_vrpex <id do jogador>` no console do servidor mostra os personagens da conta e qual a
+próxima conexão carrega.
 
 **Onde fica cada coisa**
 
