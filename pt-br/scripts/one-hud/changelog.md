@@ -6,6 +6,8 @@ description: Histórico de versões do one_hud.
 
 ## 1.0.0 (em teste)
 
+* vRPex com HUD própria (lotus e derivados): gameplay importado com `onehud_import` (relógio/clima, cinto, nitro,
+  recrutamento, anúncios); anéis de fome/sede somem em bases sem esse status.
 * HUD: status com regras de visibilidade, voz e rádio, dinheiro com variação, chips do topo, arma, minimapa
   encaixado, rua, zona, bússola, hora e clima, velocímetro com RPM segmentado, marcha, combustível, motor,
   indicadores, nitro e limitador.

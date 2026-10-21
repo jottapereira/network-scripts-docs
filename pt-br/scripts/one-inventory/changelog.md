@@ -6,6 +6,8 @@ description: Histórico de versões do one_inventory.
 
 ## 1.0.0 (em teste)
 
+* vRPex com inventário em recurso separado (lotus e derivados): itens lidos da base, uso dos itens importado com
+  `oneinv_import`, peso pela regra da base, itens antigos migrados na primeira entrada, aviso de item da base.
 * Inventário completo: bolsos, equipamento, mochila, containers com peso do conteúdo, chão, porta-malas com
   tampa e animação, porta-luvas, baús, revista, hotbar, armas, munição e acessórios de arma.
 * Lojas (compra/venda, estoque gravado, moeda em dinheiro ou item) e bancadas (fila que corre offline).
