@@ -8,6 +8,7 @@ description: config.lua, items.lua e as regras do seu servidor.
 
 | Opção | Padrão | O que faz |
 |---|---|---|
+| `Config.Accent` | `nil` | cor de destaque das telas deste script (`'#ff6a00'`). `nil` usa a cor geral. Ver [Cor das telas](../../comece-aqui/cor-das-telas.md) |
 | `Config.OpenKey` | `TAB` | Tecla de abrir (o jogador pode trocar nas configurações do FiveM) |
 | `Config.Layout` | `'open'` | `'open'`: compacto, o jogo continua visível e a câmera não mexe, acessórios numa coluna ao lado do inventário. `'classic'`: tela escurecida, cabeçalho e personagem no centro com o equipamento em volta (`Config.Preview`) |
 | `Config.Player.Slots` / `Weight` / `Hotbar` | `30` / `30.0` kg / `5` | Bolsos do personagem |

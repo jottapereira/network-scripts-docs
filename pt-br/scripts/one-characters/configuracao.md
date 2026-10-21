@@ -9,6 +9,7 @@ description: Todas as opções do config.lua do one_characters.
 | Opção | Padrão | Descrição |
 |---|---|---|
 | `Config.Locale` | `nil` | idioma deste produto. `nil` usa o idioma global (`setr one:locale`) |
+| `Config.Accent` | `nil` | cor de destaque das telas deste script (`'#ff6a00'`). `nil` usa a cor geral. Ver [Cor das telas](../../comece-aqui/cor-das-telas.md) |
 | `Config.Sounds` | `true` | sons de interface (sons nativos dos menus do GTA) |
 | `Config.AllowDelete` | `true` | permite que o jogador exclua personagens. Com `false`, o botão some |
 
@@ -126,6 +127,19 @@ Config.DefaultAppearance = {
 
 Peças disponíveis: `mask`, `arms`, `pants`, `bag`, `shoes`, `accessory`, `undershirt`, `armor`, `decals`,
 `torso`. Acessórios (`props`): `hat`, `glasses`, `ears`, `watch`, `bracelet` (`drawable = -1` = nenhum).
+
+Se o cabelo escolhido aqui não existir na sua base (pacote de cabelos diferente), o criador começa no primeiro
+cabelo que existe.
+
+## Cabelos
+
+O criador mostra **só os cabelos que existem** no modelo, incluindo os de pacotes de cabelo da sua base: números
+vazios ou que o jogo não desenha somem da lista sozinhos. Para esconder números que existem mas você não quer
+oferecer:
+
+```lua
+Config.HiddenHair = { m = { 23, 24 }, f = {} }
+```
 
 ## shared/data.lua
 

@@ -8,6 +8,7 @@
 * [Requisitos](comece-aqui/requisitos.md)
 * [Instalação rápida](comece-aqui/instalacao-rapida.md)
 * [Frameworks suportados](comece-aqui/frameworks-suportados.md)
+* [Cor das telas](comece-aqui/cor-das-telas.md)
 * [Compra, entrega e licença](comece-aqui/compra-e-licenca.md)
 * [Suporte](comece-aqui/suporte.md)
 

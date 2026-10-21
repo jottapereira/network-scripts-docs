@@ -6,6 +6,9 @@ description: Histórico de versões do one_characters.
 
 ## 1.2.1 (em teste)
 
+* vRPex: personagem criado não pede para ser criado de novo e aparece na seleção.
+* O criador mostra só os cabelos que existem na sua base; `Config.HiddenHair` esconde os que você não quiser.
+* Cor das telas configurável ([Cor das telas](../../comece-aqui/cor-das-telas.md)).
 * O personagem fica parado no criador mesmo quando a base tenta movê-lo ao entrar.
 * A foto de cada personagem na seleção é atualizada ao carregar (não mostra mais a foto de outro).
 

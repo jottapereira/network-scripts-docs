@@ -6,6 +6,7 @@ description: Histórico de versões do one_hud.
 
 ## 1.0.0 (em teste)
 
+* Cor das telas configurável ([Cor das telas](../../comece-aqui/cor-das-telas.md)).
 * vRPex com HUD própria (lotus e derivados): gameplay importado com `onehud_import` (relógio/clima, cinto, nitro,
   recrutamento, anúncios); anéis de fome/sede somem em bases sem esse status.
 * Creative v5 (Summerz): HUD da base importada com `onehud_import` (cinto, relógio, interações e telas de

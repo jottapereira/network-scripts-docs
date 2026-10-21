@@ -8,6 +8,7 @@ description: config.lua, fontes de dados e arquivos abertos.
 
 | Opção | Padrão | O que faz |
 |---|---|---|
+| `Config.Accent` | `nil` | cor de destaque das telas deste script (`'#ff6a00'`). `nil` usa a cor geral. Ver [Cor das telas](../../comece-aqui/cor-das-telas.md) |
 | `Config.Brand` / `Config.Logo` | `'N1'` / `nil` | Marca no canto: texto curto ou imagem (`'nui://one_hud/web/logo.png'`) |
 | `Config.Unit` | `'kmh'` | Velocidade em `kmh` ou `mph` |
 | `Config.Minimap` | `'vehicle'` | Minimapa: `vehicle` (só dirigindo), `always` ou `never` |

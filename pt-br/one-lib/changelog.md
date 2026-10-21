@@ -6,6 +6,7 @@ description: Histórico de versões do one_lib.
 
 ## 0.6.2 (em teste)
 
+* `setr one:accent`: a cor de destaque de todos os produtos ([Cor das telas](../comece-aqui/cor-das-telas.md)).
 * Nomes das funções do vRP achados automaticamente em bases misturadas (vRPex com funções do Creative e vice-versa).
 * Bases que não deixam ler as pastas do `vrp`: os arquivos são achados pelo nome e nada é dado como "faltando" à toa.
 * Banco fora do ar não trava mais o start.

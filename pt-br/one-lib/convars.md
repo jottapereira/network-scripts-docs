@@ -17,6 +17,7 @@ Use `setr` para o que o cliente também precisa ler e `set` para o que deve fica
 | `one:appearance` | `setr` | `auto` | força o sistema de roupa: `creative`, `illenium`, `skinchanger`, `one` |
 | `one:locale` | `setr` | `pt-BR` | idioma padrão de todos os produtos |
 | `one:notify` | `setr` | `auto` | notificações: `one`, `ox`, `framework`, `native` |
+| `one:accent` | `setr` | verde Network One | cor de destaque das telas de todos os produtos (`"#ff6a00"` ou `"255, 106, 0"`). Ver [Cor das telas](../comece-aqui/cor-das-telas.md) |
 | `one:sounds` | `setr` | `true` | `false` desliga os sons de interface de todos os produtos |
 | `one:interact_aim` | `setr` | `auto` | mira (ALT) da interação: `auto` (usa ox\_target/qb-target se a base tiver), `one` (sempre a do one\_lib), `external` (sempre delegar) |
 | `one:log_level` | `set` | `info` | `debug`, `info`, `warn` ou `error` |

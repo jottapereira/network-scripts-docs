@@ -6,6 +6,7 @@ description: Histórico de versões do one_inventory.
 
 ## 1.0.0 (em teste)
 
+* Cor das telas configurável ([Cor das telas](../../comece-aqui/cor-das-telas.md)).
 * vRPex com inventário em recurso separado (lotus e derivados): itens lidos da base, uso dos itens importado com
   `oneinv_import`, peso pela regra da base, itens antigos migrados na primeira entrada, aviso de item da base.
 * vRPex: o import descobre sozinho quem tira o item ao usar (o próprio item ou o inventário antes de usar) e
