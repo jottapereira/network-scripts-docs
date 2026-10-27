@@ -53,17 +53,68 @@ Câmera com rosto, tronco e corpo, giro por arrastar, zoom e **sortear aparênci
 * **Roupa salva no seu sistema atual**: barbearias e lojas continuam funcionando com o personagem criado.
 * **0.00 ms** depois que o jogador entra na cidade. O recurso fica totalmente parado.
 
+## Para o dono do servidor
+
+* **Marca da sua cidade:** sigla, nome e subtítulo no canto da tela, e cor de destaque própria.
+* **Regras de identidade:** tamanho do nome, nomes proibidos, idade mínima e máxima, lista de nacionalidades e tamanho da história.
+* **Slots e apoiadores:** quantos cards aparecem, e slots extras por VIP, cargo ou qualquer regra sua.
+* **Spawns:** pontos públicos, local de nascimento do personagem novo e locais exclusivos por personagem (casas, base da facção).
+* **Cena própria:** mova o line-up e o criador para qualquer lugar do mapa; a câmera se ajusta às paredes sozinha.
+* **Hooks abertos:** itens iniciais, mensagem de boas-vindas e o que acontece ao aparecer na cidade, sem mexer no código protegido.
+* **Idiomas:** português e inglês, com todos os textos editáveis.
+
 ## Compatibilidade
 
-| Framework | Substitui |
-|---|---|
-| vRP Creative (Network, Origens, Bewitched) | `spawn` |
-| vRP Creative v4/v5 | `vrp_spawn` e `vrp_login` |
-| vRPex | criação de identidade e escolha de spawn |
-| ESX Legacy | `esx_multicharacter` |
-| QBCore | `qb-multicharacter` e `qb-spawn` |
-| Qbox | menu de personagens do `qbx_core` |
-| Standalone | multipersonagem completo, sem framework |
+| Base | Status | O que ele substitui |
+|---|:-:|---|
+| vRP Creative (Network, Origens, Bewitched) | ✅ | `spawn` |
+| vRP Creative v4/v5 | 🧪 | `vrp_spawn` e `vrp_login` |
+| vRPex | 🧪 | criação de identidade e escolha de spawn |
+| ESX Legacy | 🧪 | `esx_multicharacter` |
+| QBCore | 🧪 | `qb-multicharacter` e `qb-spawn` |
+| Qbox | 🧪 | menu de personagens do `qbx_core` |
+| Standalone | 🧪 | multipersonagem completo, sem framework |
+
+✅ estável (validado em jogo) · 🧪 beta (validado em laboratório nas bases reais; relatos no [Discord](https://discord.gg/ntqpUuHmYV))
+
+## O que vem na compra
+
+* O recurso `one_characters` e o `one_lib` (biblioteca comum dos produtos Network Scripts).
+* Instalação guiada para a sua base, com a documentação completa em português.
+* Interface em português e inglês.
+* Atualizações dentro da versão comprada e suporte por ticket no Discord.
+
+## Perguntas frequentes
+
+<details>
+<summary>Preciso apagar os personagens que já existem?</summary>
+
+Não. Os dados do personagem continuam nas tabelas do seu framework. O produto cria uma tabela própria só para o
+que os frameworks não guardam de forma padronizada (nascimento, nacionalidade, história, horas jogadas).
+
+</details>
+
+<details>
+<summary>As lojas de roupa e barbearias continuam funcionando?</summary>
+
+Sim. A roupa é salva no sistema que a sua base já usa.
+
+</details>
+
+<details>
+<summary>Posso trocar o cenário da seleção?</summary>
+
+Sim. A cena padrão é a sala de line-up do criador do GTA Online, mas você move o line-up e o criador para qualquer
+lugar do mapa.
+
+</details>
+
+<details>
+<summary>Pesa no servidor?</summary>
+
+Não. Depois que o jogador entra na cidade o recurso fica parado (0.00 ms).
+
+</details>
 
 {% content-ref url="../scripts/one-characters/" %}
 [one-characters](../scripts/one-characters/)

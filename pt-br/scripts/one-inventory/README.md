@@ -1,47 +1,48 @@
 ---
-description: Inventário, baús, lojas, bancadas, porta-malas, chão e armas em um só sistema, em qualquer base.
+description: Documentação técnica do one_inventory.
 ---
 
 # one\_inventory
 
-{% hint style="warning" %}
-Versão 1.1. Validada em laboratório nas 7 bases suportadas; relatos de cada base são bem-vindos no [Discord](https://discord.gg/ntqpUuHmYV).
-{% endhint %}
-
-Um único sistema para tudo que envolve itens: bolsos, mochila, equipamento, chão, porta-malas, porta-luvas,
-baús, lojas, bancadas e revista. Ele vira a **fonte da verdade dos itens** do servidor, e os scripts que você já
-tem continuam funcionando.
+Inventário, baús, lojas, bancadas, porta-malas, chão e armas em um só sistema. Para a apresentação do produto, veja a
+[vitrine](../../vitrine/one-inventory.md).
 
 {% embed url="https://www.youtube.com/watch?v=JvsmuEtCk-I" %}
 Showcase do one\_inventory.
 {% endembed %}
 
-## Destaques
+## Como funciona
 
-* **Servidor como única autoridade.** Toda movimentação é validada e aplicada de uma vez no servidor; a interface
-  responde na hora e desfaz se o servidor recusar. Sem duplicação de itens.
-* **O seu personagem na tela.** A pé, o inventário abre com a câmera no seu personagem (gire arrastando); em baús,
-  lojas e veículos, ele aparece como parte da interface.
-* **Itens com vida.** Metadados por item (número de série, durabilidade por tempo, munição na arma, dados da base).
-* **Containers de verdade.** Mochila equipada vira um inventário próprio; maletas e bolsas guardam itens e o
-  **peso do conteúdo conta** para quem carrega.
-* **Mundo físico.** Item solto vira objeto no chão; o porta-malas abre a tampa e o personagem faz a animação.
-* **Interação 3D.** Lojas, bancadas e baús mostram uma marca ao chegar perto e o cartão de opções no alcance; o
-  porta-malas abre mirando no carro.
-* **Lojas e bancadas** na mesma tela: estoque gravado, moeda em dinheiro ou item, fila de fabricação que continua
-  com o jogador offline.
-* **Peso que pesa** e **rastro de digitais** para a polícia.
-* **Interface de jogo.** Arrastar com Shift (metade) e Ctrl (um), hotbar 1–5, menu de contexto, busca e filtros.
-* **Ocioso = 0.00 ms.** Fechado, nada roda em loop. A interface recebe só as diferenças.
+```
+Jogador abre (TAB) · mira no carro (ALT) · chega perto de uma loja, bancada ou baú
+  └─ cliente pede ao servidor ──► servidor valida (distância, grupo, peso, espaço)
+                                      └─ aplica a movimentação de uma vez
+                                           └─ envia só as diferenças para a interface
+                                                └─ se o servidor recusar, a interface desfaz
 
-## Funciona na sua base
+Outros scripts (ox_inventory, qb-inventory, vRP, ESX...)
+  └─ camada de compatibilidade responde com as mesmas funções, e o one_inventory é a fonte da verdade
+```
 
-| vRP Creative | Creative v4/v5 | vRPex | ESX | QBCore | Qbox | Standalone |
-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| ✅ | 🧪 | 🧪 | 🧪 | 🧪 | 🧪 | 🧪 |
+## Arquivos
 
-Scripts feitos para `ox_inventory` e `qb-inventory` funcionam sem alteração. Veja
-[Compatibilidade e migração](compatibilidade.md).
+| Arquivo | Editável | Para quê |
+|---|---|---|
+| `config.lua` | ✅ | todas as opções ([Configuração](configuracao.md)) |
+| `items.lua` | ✅ | cria ou sobrescreve itens |
+| `server/open.lua` · `client/open.lua` | ✅ | regras do seu servidor (não são alterados nas atualizações) |
+| `locales/pt-BR.lua` · `locales/en.lua` | ✅ | todos os textos, inclusive os da interface |
+| `web/images` | ✅ | imagens dos itens |
+| `sql/*.sql` | ✅ | tabelas criadas e atualizadas automaticamente |
+| demais arquivos | protegido | |
+
+## Banco de dados
+
+| Tabela | Conteúdo |
+|---|---|
+| `one_inventory` | inventários (bolsos, baús, porta-malas, porta-luvas) |
+| `one_inventory_shops` | estoque das lojas |
+| `one_inventory_crafting` | filas de fabricação das bancadas |
 
 ## Páginas
 

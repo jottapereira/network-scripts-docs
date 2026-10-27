@@ -7,7 +7,7 @@ description: Documentação técnica do one_characters.
 Seleção, criação e spawn de personagem. Para a apresentação do produto, veja a
 [vitrine](../../vitrine/one-characters.md).
 
-{% embed url="https://www.youtube.com/watch?v=S4YHOlFGhF8" %}
+{% embed url="https://www.youtube.com/watch?v=J-Bzgvd9RtM" %}
 Showcase do one\_characters.
 {% endembed %}
 

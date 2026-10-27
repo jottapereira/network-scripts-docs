@@ -1,50 +1,46 @@
 ---
-description: A oficina de armas da cidade. Bancadas físicas onde o jogador monta acessórios, troca a cor e compra skins para todas as armas, pagando em dinheiro, itens ou gemas.
+description: Documentação técnica do one_workshop.
 ---
 
 # one\_workshop
 
-{% hint style="warning" %}
-Versão 1.0. Validada em laboratório nas 7 bases suportadas; relatos de cada base são bem-vindos no [Discord](https://discord.gg/ntqpUuHmYV).
-{% endhint %}
+A oficina de armas: bancadas físicas, acessórios, cor e skins, cobrados em dinheiro, itens ou gemas. Para a
+apresentação do produto, veja a [vitrine](../../vitrine/one-workshop.md).
 
-A arma do jogador ganha identidade: acessórios, cor e uma **coleção de skins**, montados numa bancada de verdade da
-cidade. O dono escolhe como cada coisa é cobrada (dinheiro, itens ou gemas) e ganha uma fonte de receita para o
-servidor.
+## Como funciona
 
-## Destaques
+```
+Jogador chega na bancada ──► servidor trava a bancada (uma pessoa por vez) e confere acesso
+  └─ escolhe acessórios · cor · skins (a arma da mesa mostra tudo ao vivo)
+       └─ confirma ──► servidor calcula o preço, cobra (tudo ou nada) e grava
+                           └─ a arma volta para a mão com a personalização aplicada
 
-* **Bancadas onde você quiser.** Quantas quiser, cada uma com tipo, blip, atendente, quem pode usar e comissão para
-  o emprego dono da bancada.
-* **Bancada física.** A arma e os acessórios reais do GTA ficam na manta e você pega com o mouse. Ao levar a peça até a
-  arma, ela já aparece montada antes de soltar. Inspeção 360° com giro livre.
-* **Skins para todas as armas.** Cada skin troca o modelo inteiro da arma, mas ela continua a mesma arma (inventário,
-  munição e acessórios intactos) e todo mundo vê. Galeria com raridades, filtro e prévia ao vivo na arma da mesa.
-  Veja [Skins](skins.md).
-* **Cobrança do seu jeito.** Cada categoria cobra em dinheiro, itens, gemas ou deixa o jogador escolher. Gemas da base
-  (Creative) funcionam sozinhas; outras moedas premium entram por configuração. Veja
-  [Cobrança](cobranca.md).
-* **Coleção permanente.** Comprou a skin, ela é do personagem e serve em qualquer arma daquele modelo; trocar é
-  grátis.
-* **Acesso por skin.** Skins de VIP, de facção ou de emprego, liberadas por grupo ou permissão.
-* **Números do jogo.** Barras de dano, cadência, capacidade, precisão e alcance mostram o efeito de cada peça antes de
-  instalar.
-* **Ocioso = 0.00 ms.** Nada roda sem bancada aberta.
+Skins ──► pacotes (recursos separados com skins.json) ──► a oficina junta todos numa galeria só
+```
 
-## Funciona na sua base
+## Arquivos
 
-| vRP Creative | Creative v4/v5 | vRPex | ESX | QBCore | Qbox |
-|:-:|:-:|:-:|:-:|:-:|:-:|
-| 🧪 | 🧪 | 🧪 | 🧪 | 🧪 | 🧪 |
+| Arquivo | Editável | Para quê |
+|---|---|---|
+| `config.lua` | ✅ | todas as opções ([Configuração](configuracao.md)) |
+| `locales/pt-BR.lua` · `locales/en.lua` | ✅ | todos os textos, inclusive os da interface |
+| `install/*` · `images/*` | ✅ | cadastro e imagens dos 24 itens para cada inventário |
+| `sql/*.sql` | ✅ | tabelas criadas e atualizadas automaticamente |
+| demais arquivos | protegido | |
 
-A personalização fica salva no próprio item da arma (one\_inventory, ox\_inventory, qb-inventory). Nas bases cujo
-inventário não guarda dados na arma, a oficina salva numa tabela própria e reaplica ao sacar.
+## Banco de dados
+
+| Tabela | Conteúdo |
+|---|---|
+| `one_workshop_weapons` | personalização por personagem e arma (só nas bases cujo inventário não guarda dados no item) |
+| `one_workshop_skins` | skins que cada personagem possui (coleção permanente) |
 
 ## Páginas
 
 * [Instalação](instalacao.md)
 * [Configuração](configuracao.md)
 * [Skins](skins.md)
+* [Pacotes de skins](pacotes.md)
 * [Cobrança: dinheiro, itens e gemas](cobranca.md)
 * [Administração e logs](administracao.md)
 * [Problemas comuns](problemas-comuns.md)
