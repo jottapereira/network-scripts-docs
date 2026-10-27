@@ -19,6 +19,7 @@ local name = One.Player.GetName(source)   -- carrega One.Player na primeira cham
 |---|---|---|
 | [Player](player.md) | servidor · cliente | identidade do personagem e ciclo de vida |
 | [Money](money.md) | servidor | dinheiro em espécie, banco e sujo |
+| [Gems](gems.md) | servidor | moeda premium: da base, de um item ou do seu sistema |
 | [Groups](groups.md) | servidor | empregos, gangues e grupos |
 | [Callback](callback.md) | servidor · cliente | pedir e responder dados com rate limit |
 | [Notify](notify.md) | servidor · cliente | notificações no sistema do servidor |

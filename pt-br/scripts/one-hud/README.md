@@ -5,12 +5,16 @@ description: HUD, velocímetro, notificações, progresso, formulários e pedido
 # one\_hud
 
 {% hint style="warning" %}
-Versão 1.0 em teste. Esta documentação acompanha a versão em teste.
+Versão 1.0. Validada em laboratório nas 7 bases suportadas; relatos de cada base são bem-vindos no [Discord](https://discord.gg/ntqpUuHmYV).
 {% endhint %}
 
 Toda a tela do jogador num produto: a HUD (status, voz, dinheiro, arma, localização, velocímetro, objetivo) **e** as
 telas que todo servidor usa (notificação, progresso, formulário, confirmação, pedido Y/N, texto de ajuda). Instale,
 desligue os equivalentes da sua base e **os scripts que você já tem passam a usar o visual novo sem alteração**.
+
+{% embed url="https://www.youtube.com/watch?v=XRstOl4t62M" %}
+Showcase do one\_hud.
+{% endembed %}
 
 ## Destaques
 

@@ -4,7 +4,13 @@ description: Histórico de versões do one_inventory.
 
 # Changelog
 
-## 1.0.0 (em teste)
+## 1.1.0
+
+* Camada `ox_inventory` completa para scripts do mercado (Qbox, ESX moderno): o ESX nesse modo guarda dinheiro e dinheiro sujo como item, e a camada não liga quando o ox original roda de verdade.
+* Comandos de admin `/giveitem`, `/removeitem` e `/clearinventory` (também `oneinv_give`, `oneinv_remove`, `oneinv_clear`), por ACE `oneinv.admin`, `command` ou `Config.AdminGroups`.
+* Armas: a skin do [one\_workshop](../one-workshop/README.md) troca o modelo da arma; acessórios e cor ficam gravados no item.
+
+## 1.0.0
 
 * Cor das telas configurável ([Cor das telas](../../comece-aqui/cor-das-telas.md)).
 * vRPex com inventário em recurso separado (lotus e derivados): itens lidos da base, uso dos itens importado com

@@ -16,7 +16,7 @@ Acompanhe no [Discord](https://discord.gg/ntqpUuHmYV).
 
 ## O que vem incluso
 
-* Todos os produtos `one_*` lançados até a data da compra, já configurados.
+* Todos os produtos `one_*` lançados até a data da compra, já configurados: personagens, inventário, HUD e oficina de armas.
 * `one_lib` e integração completa entre os sistemas (ex.: a identidade criada no `one_characters` vira item no inventário).
 * Design único em todas as telas.
 * Estrutura de banco pronta e migrações automáticas.

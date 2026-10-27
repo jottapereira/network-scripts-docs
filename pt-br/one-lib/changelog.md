@@ -4,7 +4,13 @@ description: Histórico de versões do one_lib.
 
 # Changelog
 
-## 0.6.2 (em teste)
+## 0.7.0
+
+* **`One.Gems`**: moeda premium configurável por recurso: gemas da base Creative e Creative v4/v5 sozinhas, item do inventário ou funções próprias ([Gems](modulos/gems.md)).
+* **`One.Inventory.GetWeaponMods` / `SetWeaponMods` / `HasWeaponMods`**: acessórios, cor e cor da camuflagem da arma, no formato de cada inventário (one\_inventory, ox\_inventory, qb-inventory). Acessórios de outros scripts são preservados.
+* Adapters ganham a seção opcional `Gems` ([contrato](../desenvolvedores/criando-adapter.md)).
+
+## 0.6.2
 
 * `setr one:accent`: a cor de destaque de todos os produtos ([Cor das telas](../comece-aqui/cor-das-telas.md)).
 * Nomes das funções do vRP achados automaticamente em bases misturadas (vRPex com funções do Creative e vice-versa).

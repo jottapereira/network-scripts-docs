@@ -12,7 +12,7 @@ A tela de personagens é a primeira coisa que todo jogador vê no seu servidor. 
 esse momento numa experiência de jogo: seus personagens aparecem **no mundo**, a câmera é cinematográfica,
 e a entrada na cidade usa a mesma transição do GTA.
 
-{% embed url="https://www.youtube.com/watch?v=S4YHOlFGhF8" %}
+{% embed url="https://www.youtube.com/watch?v=J-Bzgvd9RtM" %}
 Showcase do one\_characters: seleção, criação e entrada na cidade.
 {% endembed %}
 

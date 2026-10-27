@@ -15,6 +15,9 @@ estiver iniciado: **one\_inventory**, **ox\_inventory**, **qb-inventory** ou o i
 | `One.Inventory.Count(src, item)` | quantidade |
 | `One.Inventory.Has(src, item, count?)` | `boolean` |
 | `One.Inventory.CanCarry(src, item, count)` | `boolean` |
+| `One.Inventory.GetWeaponMods(src, weapon)` | `mods, ref, meta` da arma na mão (acessórios, cor), ou `nil` |
+| `One.Inventory.SetWeaponMods(src, ref, mods)` | grava no item da arma; acessórios de outros scripts são preservados |
+| `One.Inventory.HasWeaponMods()` | `true` se o inventário guarda isso no próprio item |
 | `One.Inventory.Provider()` | `'one_inventory'`, `'ox_inventory'`, `'qb-inventory'`, `'native'` ou `nil` |
 
 ```lua

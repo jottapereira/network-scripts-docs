@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1990" height="480" viewBox="0 0 1990 480">
+  <defs>
+    <radialGradient id="glow" cx="78%" cy="40%" r="55%">
+      <stop offset="0" stop-color="#2fe0b5" stop-opacity=".30"/>
+      <stop offset=".45" stop-color="#2fe0b5" stop-opacity=".07"/>
+      <stop offset="1" stop-color="#2fe0b5" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#101217"/>
+      <stop offset="1" stop-color="#07080a"/>
+    </linearGradient>
+    <linearGradient id="markGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2fe0b5"/>
+      <stop offset="1" stop-color="#1a9e80"/>
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#ffffff" stroke-opacity=".035" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#07080a" stop-opacity=".9"/>
+      <stop offset=".55" stop-color="#07080a" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1990" height="480" fill="url(#bg)"/>
+  <rect width="1990" height="480" fill="url(#grid)"/>
+  <rect width="1990" height="480" fill="url(#glow)"/>
+  <rect width="1990" height="480" fill="url(#fade)"/>
+  <g transform="translate(1520 120)" opacity=".9">
+    <rect width="240" height="240" rx="36" fill="url(#markGrad)"/>
+    <text x="120" y="148" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="92" font-weight="800" fill="#03140f">IN</text>
+  </g>
+  <rect x="120" y="150" width="56" height="4" rx="2" fill="#2fe0b5"/>
+  <text x="196" y="160" font-family="JetBrains Mono, Consolas, monospace" font-size="24" letter-spacing="6" fill="#2fe0b5">PRODUTO · DISPONÍVEL</text>
+  <text x="120" y="262" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="84" font-weight="800" letter-spacing="-2" fill="#eef1f4">one_inventory</text>
+  <text x="122" y="326" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="32" fill="#eef1f4" fill-opacity=".6">Bolsos, mochila, baús, lojas, bancadas e porta-malas em um sistema só</text>
+</svg>

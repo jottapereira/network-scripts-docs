@@ -5,12 +5,16 @@ description: Inventário, baús, lojas, bancadas, porta-malas, chão e armas em 
 # one\_inventory
 
 {% hint style="warning" %}
-Versão 1.0 em teste. Esta documentação acompanha a versão em teste.
+Versão 1.1. Validada em laboratório nas 7 bases suportadas; relatos de cada base são bem-vindos no [Discord](https://discord.gg/ntqpUuHmYV).
 {% endhint %}
 
 Um único sistema para tudo que envolve itens: bolsos, mochila, equipamento, chão, porta-malas, porta-luvas,
 baús, lojas, bancadas e revista. Ele vira a **fonte da verdade dos itens** do servidor, e os scripts que você já
 tem continuam funcionando.
+
+{% embed url="https://www.youtube.com/watch?v=JvsmuEtCk-I" %}
+Showcase do one\_inventory.
+{% endembed %}
 
 ## Destaques
 

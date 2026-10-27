@@ -38,14 +38,15 @@ normalmente.
 {% step %}
 ### Sua base não usava ox\_inventory?
 
-Bases ESX com o inventário padrão do `es_extended` (ou `esx_inventoryhud`) precisam ligar o modo ox. No
-`es_extended/shared/config.lua` (ou `config.lua`, conforme a versão):
+Bases ESX com o inventário padrão (`esx_inventory`, `esx_inventoryhud`): **tire o `ensure` deles** (mantenha as
+pastas). Os itens vêm da tabela `items` do banco (nome, label e peso).
 
-```lua
-Config.OxInventory = true
-```
+* **ESX 1.16 ou mais novo:** nada a configurar. O ESX encontra o `ox_inventory` (que é o one\_inventory) e liga o
+  modo ox sozinho.
+* **ESX mais antigo:** ligue o modo ox no `es_extended/config.lua`: `Config.OxInventory = true`.
 
-Os itens vêm da tabela `items` do banco (nome, label e peso). Desligue `esx_inventoryhud` se usar.
+No modo ox o **dinheiro em espécie e o sujo são itens** (`money` e `black_money`), como no ox\_inventory. Na
+primeira entrada de cada personagem, os itens e o dinheiro que ele tinha no ESX passam para o inventário.
 {% endstep %}
 
 {% step %}

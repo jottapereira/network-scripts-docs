@@ -125,6 +125,18 @@ Itens manuseados sem luvas (slot de equipamento `gloves` vazio) guardam a digita
 digitais não aparecem para os jogadores; quem está nos grupos acima tem **Analisar digitais** no menu do item e
 pode colher a digital de alguém próximo para comparar. Itens com `flags.noPrints` não guardam digitais.
 
+## Comandos de admin
+
+| Comando | O que faz |
+|---|---|
+| `/giveitem <id> <item> [quantidade]` | Dá um item ao jogador (`me` = você mesmo) |
+| `/removeitem <id> <item> [quantidade]` | Tira um item do jogador |
+| `/clearinventory <id>` | Esvazia os bolsos do jogador |
+
+Também pelo console do servidor. Se outro script da sua base já usa um desses nomes, use `oneinv_give`,
+`oneinv_remove` e `oneinv_clear` (existem sempre). Quem pode usar: quem tem a ACE `command` (o `group.admin` do
+ESX/QBCore/Qbox), quem recebe `add_ace group.admin oneinv.admin allow`, ou os grupos de `Config.AdminGroups`.
+
 ## items.lua
 
 Sobrescreve ou cria itens. O que vem do framework (no Creative, `vrp/config/Item.lua`) é importado
