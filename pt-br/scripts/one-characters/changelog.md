@@ -4,7 +4,7 @@ description: Histórico de versões do one_characters.
 
 # Changelog
 
-## 1.2.1 (em teste)
+## 1.2.1
 
 * vRPex: vários personagens por conta, com criar, trocar e excluir, colando um bloco no `vrp` ([instalação](instalacao.md)).
   Sem o bloco: um personagem por conta.

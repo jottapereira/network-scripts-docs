@@ -4,6 +4,11 @@ description: Histórico de versões do one_inventory.
 
 # Changelog
 
+## 1.1.1
+
+* **vRPex:** a mochila da base (que só somava peso e sumia ao usar) vira um item de equipar com inventário próprio, no peso que a base já define. Quem já usou mochilas mantém o peso extra.
+* **Armas:** ao sacar, acabamentos (Luxe, Low Rider) também trocam o modelo, como as skins.
+
 ## 1.1.0
 
 * Camada `ox_inventory` completa para scripts do mercado (Qbox, ESX moderno): o ESX nesse modo guarda dinheiro e dinheiro sujo como item, e a camada não liga quando o ox original roda de verdade.
