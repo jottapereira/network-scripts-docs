@@ -17,17 +17,17 @@ deixa o jogador escolher.
 
 ## Destaques
 
-<table data-view="cards"><thead><tr><th></th><th></th></tr></thead><tbody><tr><td><strong>Bancada física</strong></td><td>A arma e as peças reais do GTA ficam na mesa. Pegue com o mouse, leve até o encaixe e veja montada antes de soltar.</td></tr><tr><td><strong>Skins para todas as armas</strong></td><td>Cada skin troca o modelo inteiro e a arma continua a mesma: inventário, munição e acessórios intactos, e todo mundo vê.</td></tr><tr><td><strong>Galeria completa</strong></td><td>Raridades, coleções, filtros, "minhas" e prévia ao vivo na arma da mesa.</td></tr><tr><td><strong>Inspeção 360°</strong></td><td>Gire a arma com inércia, aproxime e confira cada detalhe.</td></tr><tr><td><strong>Números do jogo</strong></td><td>Barras de dano, cadência, capacidade, precisão e alcance mostram o efeito de cada peça antes de instalar.</td></tr><tr><td><strong>Coleção permanente</strong></td><td>Comprou, é do personagem: serve em qualquer arma daquele modelo e trocar é grátis.</td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th></tr></thead><tbody><tr><td><strong>Bancada física</strong></td><td>A arma e as peças reais do GTA ficam numa bancada de armas do mapa. Pegue com o mouse, leve até o ponto de encaixe e veja montada antes de soltar. O enquadramento acompanha o tamanho da arma.</td></tr><tr><td><strong>Skins para todas as armas</strong></td><td>Cada skin troca o modelo inteiro e a arma continua a mesma: inventário, munição e acessórios intactos, e todo mundo vê.</td></tr><tr><td><strong>Galeria completa</strong></td><td>Raridades, coleções, filtros, "minhas" e prévia ao vivo na arma da mesa.</td></tr><tr><td><strong>Inspeção 360°</strong></td><td>Gire a arma com inércia, aproxime e confira cada detalhe.</td></tr><tr><td><strong>Números do jogo</strong></td><td>Barras de dano, cadência, capacidade, precisão e alcance mostram o efeito de cada peça antes de instalar.</td></tr><tr><td><strong>Coleção permanente</strong></td><td>Comprou, é do personagem: serve em qualquer arma daquele modelo e trocar é grátis.</td></tr></tbody></table>
 
 ## Na bancada
 
 | Aba | O que o jogador faz |
 |---|---|
-| **Acessórios** | peças reais do jogo, cada uma com o efeito nos números da arma |
-| **Cor** | troca a cor da arma |
-| **Skins** | galeria com raridade e coleção, prévia na arma da mesa, compra e equipar |
+| **Acessórios** | peças reais do jogo, cada uma com o efeito nos números da arma. Clique na peça que é sua para encaixar (a que estava no lugar vai para a mesa) ou arraste até o ponto de encaixe. Peça que o jogador ainda não tem vai só para a mesa, e a cobrança acontece ao aplicar |
+| **Pintura** | uma lista só, com fotos reais da arma no jogo: Original, cores, acabamentos (Luxe, Low Rider...) e skins da coleção. Só uma escolha vale por vez |
+| **Meus itens** | o que o jogador tem para esta arma: acessórios com item no inventário, desbloqueados para sempre ou já gravados nela, e as suas skins. Puxe para a mesa e leve ao ponto de encaixe; a mesa sempre abre só com a arma |
 
-Cada tipo de bancada libera só o que o dono quer. Os três tipos que vêm prontos: **pública** (cor e skins),
+Cada tipo de bancada libera só o que o dono quer. Os três tipos que vêm prontos: **pública** (pintura),
 **armeiro** (tudo, restrito a quem trabalha na oficina ou na polícia) e **clandestina** (tudo, para qualquer um). Crie quantos tipos quiser.
 
 ## Detalhes que fazem diferença

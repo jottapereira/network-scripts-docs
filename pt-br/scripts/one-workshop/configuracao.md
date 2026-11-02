@@ -8,9 +8,9 @@ description: Tudo o que dá para ajustar no config.lua da one_workshop.
 
 | Opção | O que faz |
 |---|---|
-| `Config.Benches` | Bancadas da cidade. Cada uma: `id`, `type`, `coords` (chão em frente, `w` = direção), `label`, `prop` (modelo criado ali; sem ele, use uma bancada do mapa e informe `top`), `ped` (atendente), `blip`, `groups`/`grade` (sobrescreve o tipo), `society` (comissão) e `prices` (fator de preço). |
-| `Config.BenchTypes` | O que cada tipo faz: `parts` (acessórios), `paint` (cores), `skins` (skins e acabamentos) e `groups`/`grade` (quem usa). Crie quantos tipos quiser. |
-| `Config.BenchProp` | Modelo padrão da bancada. |
+| `Config.Benches` | Bancadas da cidade. Cada uma: `id`, `type`, `coords` (onde a mesa fica no chão, no meio dela; `w` = direção para onde o jogador trabalha. Use `/bancada` para achar o ponto), `label`, `prop` (modelo criado ali; sem ele, use uma bancada do mapa e informe `top`), `ped` (atendente), `blip`, `groups`/`grade` (sobrescreve o tipo), `society` (comissão) e `prices` (fator de preço). |
+| `Config.BenchTypes` | O que cada tipo faz e **como cobra**: `parts` (acessórios), `paint` (cores), `skins` (skins e acabamentos), `groups`/`grade` (quem usa) e `pricing` (as regras de cobrança do tipo; ver [Cobrança](cobranca.md)). Crie quantos tipos quiser. |
+| `Config.BenchProp` / `Config.BenchFallback` | Modelo da bancada (a de armas do GTA Online) e o reserva, usado se a build do jogo não tiver o modelo. |
 | `Config.Mat` | Centro e tamanho da manta (as peças não saem dela). |
 | `Config.Camera` / `Config.Inspect` | Altura da câmera e inspeção 360°. |
 | `Config.Scene` | Luz da bancada (cor, brilho, altura). |
@@ -18,7 +18,7 @@ description: Tudo o que dá para ajustar no config.lua da one_workshop.
 ```lua
 Config.Benches = {
 	{
-		id = 'ammunation', type = 'public', coords = vec4(21.6, -1106.6, 28.8, 160.0), prop = 'prop_tool_bench02',
+		id = 'ammunation', type = 'ammunation', coords = vec4(21.6, -1106.6, 28.8, 160.0), prop = Config.BenchProp,
 		label = 'Oficina Ammu-Nation', blip = { sprite = 110, color = 5 },
 		ped = { model = 's_m_y_ammucity_01', coords = vec4(22.5, -1105.2, 29.8, 160.0) },
 		society = { name = 'ammunation', percent = 30 }, prices = { skins = 0.9 }
@@ -40,7 +40,7 @@ Config.Benches = {
 
 | Opção | O que faz |
 |---|---|
-| `Config.Pricing` | Forma de cobrar de cada categoria (`item`, `money`, `gems`, `hybrid`, `free`) e as contas de dinheiro. |
+| `Config.Pricing` | Regras de cobrança de cada categoria (forma de pagar, só nesta arma ou vitalício, fator) e as contas de dinheiro. Cada tipo de bancada pode ter as suas. Ver [Cobrança](cobranca.md). |
 | `Config.Prices` | Preços dos acessórios (por tipo, família e padrão) e da cor. |
 | `Config.Gems` | De onde vêm as gemas (`auto`, `item`, `custom`, `none`). |
 | `Config.Society` | Função que paga a comissão das bancadas ao emprego. |
@@ -55,4 +55,4 @@ Detalhes em [Cobrança](cobranca.md) e [Skins](skins.md).
 | `Config.Logs` | Quais eventos vão para o Discord (`apply`, `buy`, `admin`). O webhook fica na convar `one_workshop:webhook`. |
 | `Config.AdminGroups` | Grupos com acesso de admin, além do ACE `oneworkshop.admin`. |
 | `Config.Accent` | Cor de destaque das telas (ou a geral do servidor em `setr one:accent`). |
-| `Config.Debug` / `Config.DebugFree` | `/oficina` e `/skinlab` (só com a convar `one_workshop:debug`) e bancada de teste sem custo. Em produção ficam desligados. |
+| `Config.Debug` / `Config.DebugFree` | `/oficina`, `/skinlab` e `/bancada` (só com a convar `one_workshop:debug`) e bancada de teste sem custo. Em produção ficam desligados. |

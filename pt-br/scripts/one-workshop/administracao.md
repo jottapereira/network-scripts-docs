@@ -13,7 +13,7 @@ description: Comandos de admin, logs no Discord e integrações.
 | `workshop_skins` | Console | Recarrega o `skins.json` e mostra quantas skins, armas e estilos a oficina encontrou. |
 | `workshop_export` | Console | Gera de novo os arquivos de cadastro dos itens em `install/`. |
 | `workshop_selftest` | Console | Autoteste: configuração, banco, catálogo, pacotes, cobrança (dinheiro, itens, gemas), compra de skin e aplicar acessórios, com um jogador de mentira. Não altera nada do servidor. |
-| `/oficina`, `/skinlab` | Com `setr one_workshop:debug true` | Bancada de teste na sua frente e vitrine de skins (escolha arma e skin, veja na inspeção 360°, sem gravar nem cobrar). |
+| `/oficina [tipo]`, `/skinlab`, `/bancada [id] [tipo]` | Com `setr one_workshop:debug true` | Bancada de teste na sua frente (o tipo escolhe a cobrança: `/oficina police`), vitrine de skins (sem gravar nem cobrar) e a mesa de teste que gera a linha pronta de `Config.Benches` (também em `install/bancadas.txt`). |
 
 Admin = ACE `oneworkshop.admin` (`add_ace group.admin oneworkshop.admin allow`) ou um grupo de `Config.AdminGroups`.
 

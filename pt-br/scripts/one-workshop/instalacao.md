@@ -68,9 +68,9 @@ Em `config.lua`, `Config.Benches`:
 
 ```lua
 Config.Benches = {
-	{ id = 'ammunation', type = 'armorer', coords = vec4(21.6, -1106.6, 28.8, 160.0), prop = 'prop_tool_bench02' },
-	{ id = 'galpao', type = 'clandestine', coords = vec4(1272.4, -1712.1, 54.7, 25.0), prop = 'prop_tool_bench02' },
-	{ id = 'praca', type = 'public', coords = vec4(-662.1, -935.3, 20.8, 180.0), prop = 'prop_tool_bench02', blip = { sprite = 110 } },
+	{ id = 'ammunation', type = 'armorer', coords = vec4(21.6, -1106.6, 28.8, 160.0), prop = Config.BenchProp },
+	{ id = 'galpao', type = 'clandestine', coords = vec4(1272.4, -1712.1, 54.7, 25.0), prop = Config.BenchProp },
+	{ id = 'praca', type = 'public', coords = vec4(-662.1, -935.3, 20.8, 180.0), prop = Config.BenchProp, blip = { sprite = 110 } },
 }
 ```
 
