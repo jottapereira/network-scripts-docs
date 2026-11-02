@@ -40,6 +40,11 @@ Instalam em minutos na sua base, seja ela **vRP Creative, vRPex, ESX, QBCore, Qb
 {% endembed %}
 {% endtab %}
 
+{% tab title="one_workshop" %}
+{% embed url="https://www.youtube.com/watch?v=zJFCusypTPM" %}
+{% endembed %}
+{% endtab %}
+
 {% tab title="one_characters" %}
 {% embed url="https://www.youtube.com/watch?v=J-Bzgvd9RtM" %}
 {% endembed %}

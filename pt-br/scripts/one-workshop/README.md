@@ -7,6 +7,10 @@ description: Documentação técnica do one_workshop.
 A oficina de armas: bancadas físicas, acessórios, cor e skins, cobrados em dinheiro, itens ou gemas. Para a
 apresentação do produto, veja a [vitrine](../../vitrine/one-workshop.md).
 
+{% embed url="https://www.youtube.com/watch?v=zJFCusypTPM" %}
+Showcase do one\_workshop.
+{% endembed %}
+
 ## Como funciona
 
 ```

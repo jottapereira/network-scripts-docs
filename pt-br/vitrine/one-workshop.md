@@ -15,6 +15,10 @@ deixa o jogador escolher.
 **Disponível** para vRP Creative (todas as gerações), vRPex, ESX, QBCore e Qbox. [Comprar no Discord](https://discord.gg/ntqpUuHmYV)
 {% endhint %}
 
+{% embed url="https://www.youtube.com/watch?v=zJFCusypTPM" %}
+Showcase do one\_workshop.
+{% endembed %}
+
 ## Destaques
 
 <table data-view="cards"><thead><tr><th></th><th></th></tr></thead><tbody><tr><td><strong>Bancada física</strong></td><td>A arma e as peças reais do GTA ficam numa bancada de armas do mapa. Pegue com o mouse, leve até o ponto de encaixe e veja montada antes de soltar. O enquadramento acompanha o tamanho da arma.</td></tr><tr><td><strong>Skins para todas as armas</strong></td><td>Cada skin troca o modelo inteiro e a arma continua a mesma: inventário, munição e acessórios intactos, e todo mundo vê.</td></tr><tr><td><strong>Galeria completa</strong></td><td>Raridades, coleções, filtros, "minhas" e prévia ao vivo na arma da mesa.</td></tr><tr><td><strong>Inspeção 360°</strong></td><td>Gire a arma com inércia, aproxime e confira cada detalhe.</td></tr><tr><td><strong>Números do jogo</strong></td><td>Barras de dano, cadência, capacidade, precisão e alcance mostram o efeito de cada peça antes de instalar.</td></tr><tr><td><strong>Coleção permanente</strong></td><td>Comprou, é do personagem: serve em qualquer arma daquele modelo e trocar é grátis.</td></tr></tbody></table>
