@@ -19,6 +19,7 @@
 * [one\_inventory](vitrine/one-inventory.md)
 * [one\_hud](vitrine/one-hud.md)
 * [one\_workshop](vitrine/one-workshop.md)
+* [one\_mechanic](vitrine/one-mechanic.md)
 * [Base Network One](vitrine/base-network-one.md)
 * [Em breve](vitrine/em-breve.md)
 
@@ -69,6 +70,20 @@
   * [Administração e logs](scripts/one-workshop/administracao.md)
   * [Problemas comuns](scripts/one-workshop/problemas-comuns.md)
   * [Changelog](scripts/one-workshop/changelog.md)
+* [one\_mechanic](scripts/one-mechanic/README.md)
+  * [Instalação](scripts/one-mechanic/instalacao.md)
+  * [Configuração](scripts/one-mechanic/configuracao.md)
+  * [Conteúdo](scripts/one-mechanic/conteudo.md)
+  * [Oficinas e ordens de serviço](scripts/one-mechanic/oficinas-e-ordens.md)
+  * [Atendimento, autoatendimento e cobrança](scripts/one-mechanic/atendimento.md)
+  * [Desgaste e diagnóstico](scripts/one-mechanic/desgaste-e-diagnostico.md)
+  * [Peças, ajuste e dinamômetro](scripts/one-mechanic/pecas-e-ajuste.md)
+  * [Visual e pintura](scripts/one-mechanic/visual.md)
+  * [Economia e perícias](scripts/one-mechanic/economia-e-pericias.md)
+  * [Lei, perícia e corrida](scripts/one-mechanic/lei-e-corrida.md)
+  * [Integração com outros scripts](scripts/one-mechanic/integracoes.md)
+  * [Problemas comuns](scripts/one-mechanic/problemas-comuns.md)
+  * [Changelog](scripts/one-mechanic/changelog.md)
 
 ## Framework: one\_lib
 
